@@ -92,10 +92,10 @@ const MEMBERS = [
   {
     group: "Alumni",
     people: [
-      { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2011", position: "중부대학교 물리치료학과", photo: "" },
-      { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", position: "광주보건대학교 물리치료학과", photo: "" },
-      { name: "Hyunjoong Kim, PT, PhD", role: "Ph.D., 2022", position: "광주보건대학교 시니어운동처방학과", photo: "" },
-      { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2024", position: "경남대학교 물리치료학과", photo: "" }
+      { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2011", position: "중부대학교 물리치료학과", photo: "assets/img/members/choi-wonjae.jpg" },
+      { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", position: "광주보건대학교 물리치료학과", photo: "assets/img/members/lee-eunsang.jpg" },
+      { name: "Hyunjoong Kim, PT, PhD", role: "Ph.D., 2022", position: "광주보건대학교 시니어운동처방학과", photo: "assets/img/members/kim-hyunjoong.jpg" },
+      { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2024", position: "경남대학교 물리치료학과", photo: "assets/img/members/sim-jeongu.jpg" }
     ]
   }
 ];

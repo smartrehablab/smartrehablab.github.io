@@ -213,7 +213,7 @@ img { max-width: 100%; display: block; }
 .group { padding: 72px 0 0; }
 .group h2 { font-size: 28px; letter-spacing: -.03em; padding-bottom: 20px; border-bottom: 1px solid var(--hair); }
 .people { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px 28px; margin-top: 36px; }
-.person .ph { aspect-ratio: 1; border-radius: 22px; background: var(--mist); background-size: cover; background-position: center; display: grid; place-items: center; font-size: 34px; font-weight: 700; color: #B9B9BE; letter-spacing: -.02em; }
+.person .ph { aspect-ratio: 4 / 5; border-radius: 22px; background: var(--mist); background-size: cover; background-position: center 20%; display: grid; place-items: center; font-size: 34px; font-weight: 700; color: #B9B9BE; letter-spacing: -.02em; }
 .person h3 { font-size: 19px; margin-top: 18px; letter-spacing: -.02em; }
 .person .role { font-size: 15px; color: var(--red); font-weight: 600; margin-top: 2px; }
 .person .info { font-size: 15px; color: var(--grey); margin-top: 10px; line-height: 1.5; }
@@ -388,3 +388,7 @@ img { max-width: 100%; display: block; }
 .stage::after { content: "3D 모델을 불러오는 중입니다"; position: absolute; left: 50%; top: 45%; transform: translateX(-50%); color: #6E6E73; font-size: 14px; transition: opacity .4s; }
 #gaitlab.ready .stage::after { opacity: 0; }
 #gaitlab.no-webgl .stage::after { content: "이 브라우저에서는 3D 보행 장면을 표시할 수 없습니다."; }
+
+.wide-img { margin: 0; }
+.wide-img img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 28px; }
+.pi .portrait { background-position: center 15%; }
