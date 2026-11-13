@@ -13,6 +13,16 @@ const SITE = {
 
 const RESEARCH = [
   {
+    id: "tech",
+    title: "Smart Rehab Technology & Aging",
+    image: "assets/img/research-4.jpg",
+    text: "가상현실 사이클링, 웨어러블 센서 기반 인지-운동 훈련, fNIRS 전전두엽 혈역학 측정을 활용해 노인과 경도인지장애 대상 재활기술을 개발합니다.",
+    studies: [
+      { title: "Enhancing cognitive and physical performance in older adults through wearable sensor-based interactive cognitive-motor training: a randomized clinical trial", journal: "Scientific Reports", year: 2025, doi: "https://doi.org/10.1038/s41598-025-03725-x" },
+      { title: "Comparison of the Influence of Dual-Task Activities on Prefrontal Activation and Gait Variables in Older Adults with Mild Cognitive Impairment during Straight and Curved Walking", journal: "Medicina", year: 2024, doi: "https://doi.org/10.3390/medicina60020235" }
+    ]
+  },
+  {
     id: "msk",
     title: "Musculoskeletal Rehabilitation",
     image: "assets/img/research-1.jpg",
@@ -40,16 +50,6 @@ const RESEARCH = [
     studies: [
       { title: "The Efficacy of Pain Neuroscience Education on Active Rehabilitation Following Arthroscopic Rotator Cuff Repair: A CONSORT-Compliant Prospective Randomized Single-Blind Controlled Trial", journal: "Brain Sciences", year: 2022, doi: "https://doi.org/10.3390/brainsci12060764" },
       { title: "Effects of Repetitive Transcranial Magnetic Stimulation on the Primary Motor Cortex of Individuals with Fibromyalgia: A Systematic Review and Meta-Analysis", journal: "Brain Sciences", year: 2022, doi: "https://doi.org/10.3390/brainsci12050570" }
-    ]
-  },
-  {
-    id: "tech",
-    title: "Smart Rehab Technology & Aging",
-    image: "assets/img/research-4.jpg",
-    text: "가상현실 사이클링, 웨어러블 센서 기반 인지-운동 훈련, fNIRS 전전두엽 혈역학 측정을 활용해 노인과 경도인지장애 대상 재활기술을 개발합니다.",
-    studies: [
-      { title: "Enhancing cognitive and physical performance in older adults through wearable sensor-based interactive cognitive-motor training: a randomized clinical trial", journal: "Scientific Reports", year: 2025, doi: "https://doi.org/10.1038/s41598-025-03725-x" },
-      { title: "Comparison of the Influence of Dual-Task Activities on Prefrontal Activation and Gait Variables in Older Adults with Mild Cognitive Impairment during Straight and Curved Walking", journal: "Medicina", year: 2024, doi: "https://doi.org/10.3390/medicina60020235" }
     ]
   }
 ];
