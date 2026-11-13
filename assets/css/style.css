@@ -491,3 +491,16 @@ img { max-width: 100%; display: block; }
   .area .art.r3 { aspect-ratio: 4 / 5; border-radius: 24px; }
   .r3-hud { left: 12px; bottom: 12px; right: 12px; max-width: none; font-size: 12px; padding: 12px 14px; }
 }
+
+/* language switch */
+.gnav .lang { display: flex; gap: 2px; margin-left: 4px; padding: 3px; border-radius: 999px; background: var(--mist); flex: none; }
+.gnav .lang button { font: inherit; font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--grey); background: none; border: 0; padding: 4px 9px; border-radius: 999px; cursor: pointer; transition: background .2s, color .2s; }
+.gnav .lang button:hover { color: var(--ink); }
+.gnav .lang button[aria-current="true"] { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
+html[lang="en"] .not-en { display: none; }
+html[lang="ja"] body { font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans JP", sans-serif; }
+@media (max-width: 860px) {
+  .gnav .lang { margin-left: auto; }
+  .gnav .lang + .burger { margin-left: 6px; }
+}
+html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: strict; overflow-wrap: break-word; }

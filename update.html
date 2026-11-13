@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Update Member Info | Smart Rehabilitation Lab</title>
-<meta name="description" content="스마트재활연구실 구성원 정보 등록·수정 요청.">
+<meta name="description" content="Add or update a member profile for the Smart Rehabilitation Lab.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/img/favicon.png">
@@ -15,75 +15,77 @@
 <div id="site-header"></div>
 <main>
 <section class="phead"><div class="wrap">
-  <p class="crumb"><a href="index.html">Home</a> / <a href="members.html">Members</a> / Update</p>
+  <p class="crumb"><a href="index.html" data-i18n="crumb.home">Home</a> / <a href="members.html" data-i18n="nav.members">Members</a> / Update</p>
   <h1 class="headline">Keep your profile current.</h1>
-  <p class="sub">홈페이지 Members에 올라갈 정보를 보내 주십시오. 연구실에서 확인한 뒤 반영합니다.</p>
+  <p class="sub" data-i18n="upd.sub">Send the information to appear on the Members page. The lab will review it before it is published.</p>
 </div></section>
 
 <div class="wrap upd-done" id="done" hidden>
-  <h2 class="title">제출되었습니다.</h2>
-  <p class="sub">연구실에서 내용을 확인한 뒤 홈페이지에 반영합니다. 반영까지 며칠이 걸릴 수 있습니다.</p>
-  <div class="actions"><a class="btn" href="members.html">Members로 돌아가기</a><a class="btn line" href="update.html">다시 작성하기</a></div>
+  <h2 class="title" data-i18n="upd.done">Submitted.</h2>
+  <p class="sub" data-i18n="upd.doneP">The lab will review your information and update the website. This may take a few days.</p>
+  <div class="actions"><a class="btn" href="members.html" data-i18n="upd.back">Back to Members</a><a class="btn line" href="update.html" data-i18n="upd.again">Submit another</a></div>
 </div>
 
 <form class="wrap upd" id="upd" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_subject" value="[Smart Rehab Lab] 구성원 정보 등록·수정 요청">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" id="next">
+  <input type="hidden" name="화면 언어" id="ulang">
   <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
   <fieldset>
-    <legend>요청 내용</legend>
+    <legend data-i18n="upd.req">Request</legend>
     <div class="f-row">
-      <label class="f"><span>요청 구분</span>
-        <select name="요청 구분" required><option value="">선택</option><option>신규 등록</option><option>정보 수정</option><option>사진만 교체</option><option>삭제 요청</option></select></label>
-      <label class="f"><span>구분</span>
-        <select name="구분" id="kind" required><option value="">선택</option><option>Researcher</option><option>Ph.D. 과정</option><option>M.S. 과정</option><option>박사 수료</option><option>졸업생</option></select></label>
+      <label class="f"><span data-i18n="upd.reqType">Request type</span>
+        <select name="요청 구분" required><option value="" data-i18n="upd.select">Select</option><option value="신규 등록" data-i18n="upd.o.new">New profile</option><option value="정보 수정" data-i18n="upd.o.edit">Update information</option><option value="사진만 교체" data-i18n="upd.o.photo">Replace photo only</option><option value="삭제 요청" data-i18n="upd.o.del">Remove profile</option></select></label>
+      <label class="f"><span data-i18n="upd.kind">Member type</span>
+        <select name="구분" id="kind" required><option value="" data-i18n="upd.select">Select</option><option value="Researcher">Researcher</option><option value="Ph.D. 과정" data-i18n="upd.o.phd">Ph.D. student</option><option value="M.S. 과정" data-i18n="upd.o.ms">M.S. student</option><option value="박사 수료" data-i18n="upd.o.cand">Ph.D. candidate (coursework completed)</option><option value="졸업생" data-i18n="upd.o.alum">Alumni</option></select></label>
     </div>
   </fieldset>
 
   <fieldset>
-    <legend>기본 정보</legend>
+    <legend data-i18n="upd.basic">Basic information</legend>
     <div class="f-row">
-      <label class="f"><span>국문 이름</span><input name="국문 이름" required autocomplete="name"></label>
-      <label class="f"><span>영문 이름</span><input name="영문 이름" required placeholder="Gildong Hong"></label>
+      <label class="f"><span data-i18n="upd.nameKo">Name in Korean</span><input name="국문 이름" required autocomplete="name"></label>
+      <label class="f"><span data-i18n="upd.nameEn">Name in English</span><input name="영문 이름" required placeholder="Gildong Hong"></label>
     </div>
-    <label class="f"><span>면허·학위 표기</span><input name="면허·학위 표기" placeholder="PT, MS / PT, PhD / PT, MS Candidate"><small>이름 뒤에 붙는 표기입니다. 예: Wonhyung Kang, PT, MS Candidate</small></label>
-    <label class="f"><span>연구 관심분야 (영문)</span><input name="연구 관심분야" placeholder="MSK disorders, Exercise"><small>영문 키워드 2~3개를 쉼표로 구분해 적어 주십시오.</small></label>
+    <label class="f"><span data-i18n="upd.cred">Credentials</span><input name="면허·학위 표기" placeholder="PT, MS / PT, PhD / PT, MS Candidate"><small data-i18n="upd.credH">Shown after your name, for example: Wonhyung Kang, PT, MS Candidate</small></label>
+    <label class="f"><span data-i18n="upd.int">Research interests (in English)</span><input name="연구 관심분야" placeholder="MSK disorders, Exercise"><small data-i18n="upd.intH">Two or three English keywords separated by commas.</small></label>
     <div class="f-row">
-      <label class="f"><span>이메일</span><input type="email" name="이메일" required autocomplete="email"></label>
-      <label class="f"><span>이메일 공개</span>
-        <select name="이메일 홈페이지 공개" required><option value="">선택</option><option>공개</option><option>비공개</option></select></label>
+      <label class="f"><span data-i18n="upd.email">Email</span><input type="email" name="이메일" required autocomplete="email"></label>
+      <label class="f"><span data-i18n="upd.emailPub">Show email on the website</span>
+        <select name="이메일 홈페이지 공개" required><option value="" data-i18n="upd.select">Select</option><option value="공개" data-i18n="upd.o.pub">Show</option><option value="비공개" data-i18n="upd.o.priv">Hide</option></select></label>
     </div>
-    <label class="f"><span>ORCID 또는 Google Scholar 주소 (선택)</span><input name="ORCID 또는 Scholar" placeholder="https://orcid.org/0000-0000-0000-0000"></label>
+    <label class="f"><span data-i18n="upd.orcid">ORCID or Google Scholar URL (optional)</span><input name="ORCID 또는 Scholar" placeholder="https://orcid.org/0000-0000-0000-0000"></label>
   </fieldset>
 
   <fieldset data-for="student" hidden>
-    <legend>재학 정보</legend>
-    <label class="f"><span>과정 입학연도</span><input name="과정 입학연도" inputmode="numeric" placeholder="2025"></label>
+    <legend data-i18n="upd.student">Current student</legend>
+    <label class="f"><span data-i18n="upd.entry">Year of entry</span><input name="과정 입학연도" inputmode="numeric" placeholder="2025"></label>
   </fieldset>
 
   <fieldset data-for="alumni" hidden>
-    <legend>졸업 정보</legend>
+    <legend data-i18n="upd.alumni">Graduation</legend>
     <div class="f-row">
-      <label class="f"><span>취득 학위</span><select name="취득 학위"><option value="">선택</option><option>Ph.D.</option><option>M.S.</option></select></label>
-      <label class="f"><span>졸업연도</span><input name="졸업연도" inputmode="numeric" placeholder="2024"></label>
+      <label class="f"><span data-i18n="upd.degree">Degree</span><select name="취득 학위"><option value="" data-i18n="upd.select">Select</option><option value="Ph.D.">Ph.D.</option><option value="M.S.">M.S.</option></select></label>
+      <label class="f"><span data-i18n="upd.gradYear">Year of graduation</span><input name="졸업연도" inputmode="numeric" placeholder="2024"></label>
     </div>
-    <label class="f"><span>현재 소속과 직위</span><input name="현재 소속·직위" placeholder="OO대학교 물리치료학과 조교수"></label>
+    <label class="f"><span data-i18n="upd.position">Current affiliation and position</span><input name="현재 소속·직위" placeholder="Assistant Professor, Department of Physical Therapy, OO University" data-i18n-ph="upd.positionPh"></label>
   </fieldset>
 
   <fieldset>
-    <legend>사진</legend>
-    <label class="f"><span>상반신 증명사진 (선택)</span><input type="file" name="attachment" id="photo" accept="image/jpeg,image/png"><small>JPG 또는 PNG, 5MB 이하. 가로 600px 이상이면 선명하게 나옵니다. 배경은 연구실에서 흰색으로 맞춥니다.</small></label>
-    <label class="f"><span>기타 요청사항 (선택)</span><textarea name="기타 요청사항" rows="4"></textarea></label>
+    <legend data-i18n="upd.photoS">Photo</legend>
+    <label class="f"><span data-i18n="upd.photo">Head-and-shoulders photo (optional)</span><input type="file" name="attachment" id="photo" accept="image/jpeg,image/png"><small data-i18n="upd.photoH">JPG or PNG, up to 5 MB. 600 px or wider looks sharpest. The lab will set the background to white.</small></label>
+    <label class="f"><span data-i18n="upd.other">Other requests (optional)</span><textarea name="기타 요청사항" rows="4"></textarea></label>
   </fieldset>
 
-  <label class="agree"><input type="checkbox" name="공개 동의" value="동의" required><span>위 정보 중 이름, 표기, 관심분야, 소속, 사진, 공개를 선택한 이메일이 연구실 홈페이지에 게시되는 것에 동의합니다.</span></label>
+  <label class="agree"><input type="checkbox" name="공개 동의" value="동의" required><span data-i18n="upd.agree">I agree that my name, credentials, research interests, affiliation, photo and, if I chose to show it, my email will be published on the lab website.</span></label>
   <p class="f-err" id="err" role="alert"></p>
-  <button class="btn" type="submit" id="send">제출하기</button>
+  <button class="btn" type="submit" id="send" data-i18n="upd.submit">Submit</button>
 </form>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>
 <script>
@@ -91,7 +93,8 @@
   var f = document.getElementById("upd"), err = document.getElementById("err"), send = document.getElementById("send");
   var key = SITE.formKey || SITE.email;
   f.action = "https://formsubmit.co/" + key;
-  document.getElementById("next").value = location.href.split(/[?#]/)[0] + "?sent=1";
+  document.getElementById("next").value = location.href.split(/[?#]/)[0] + "?sent=1" + (LANG !== "en" ? "&lang=" + LANG : "");
+  document.getElementById("ulang").value = LANG;
   function done() { f.hidden = true; document.getElementById("done").hidden = false; scrollTo(0, 0); }
   if (/[?&]sent=1/.test(location.search)) done();
   var kind = document.getElementById("kind");
@@ -106,22 +109,22 @@
   f.addEventListener("submit", function (e) {
     var p = document.getElementById("photo").files[0];
     err.textContent = "";
-    if (p && p.size > 5 * 1024 * 1024) { e.preventDefault(); err.textContent = "사진 파일이 5MB를 넘습니다. 더 작은 파일로 다시 선택해 주십시오."; return; }
+    if (p && p.size > 5 * 1024 * 1024) { e.preventDefault(); err.textContent = UI("upd.big"); return; }
     if (!window.fetch || !window.FormData) return;
     e.preventDefault();
     var data = new FormData(f);
     data.delete("_next");
-    send.disabled = true; send.textContent = "보내는 중";
+    send.disabled = true; send.textContent = UI("upd.sending");
     fetch("https://formsubmit.co/ajax/" + key, { method: "POST", body: data, headers: { Accept: "application/json" } })
       .then(function (r) { return r.json().catch(function () { return { success: r.ok ? "true" : "false", message: "HTTP " + r.status }; }); })
       .then(function (j) {
         var ok = String(j.success) === "true", msg = String(j.message || "");
         if (ok) { done(); return; }
-        if (/activat/i.test(msg)) err.textContent = "연구실 메일 인증이 아직 끝나지 않았습니다. 연구실에서 인증을 마친 뒤 다시 제출해 주십시오. (" + msg + ")";
-        else err.textContent = "제출하지 못했습니다. 잠시 뒤 다시 시도해 주십시오. (" + (msg || "알 수 없는 오류") + ")";
+        if (/activat/i.test(msg)) err.textContent = UI("upd.act") + " (" + msg + ")";
+        else err.textContent = UI("upd.fail") + " (" + (msg || UI("upd.unknown")) + ")";
       })
-      .catch(function (x) { err.textContent = "전송 중 연결 오류가 났습니다. 잠시 뒤 다시 시도해 주십시오. (" + x.message + ")"; })
-      .finally(function () { send.disabled = false; send.textContent = "제출하기"; });
+      .catch(function (x) { err.textContent = UI("upd.net") + " (" + x.message + ")"; })
+      .finally(function () { send.disabled = false; send.textContent = UI("upd.submit"); });
   });
 })();
 </script>

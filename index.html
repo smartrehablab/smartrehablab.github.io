@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Rehabilitation Lab | 삼육대학교 물리치료학과</title>
-<meta name="description" content="삼육대학교 물리치료학과 스마트재활연구실. 근골격계·신경계 재활, 통증 신경과학, 스마트 재활기술 연구.">
-<meta property="og:title" content="Smart Rehabilitation Lab | 삼육대학교 물리치료학과">
-<meta property="og:description" content="삼육대학교 물리치료학과 스마트재활연구실. 근골격계·신경계 재활, 통증 신경과학, 스마트 재활기술 연구.">
+<title>Smart Rehabilitation Lab | Department of Physical Therapy, Sahmyook University</title>
+<meta name="description" content="Smart Rehabilitation Lab, Department of Physical Therapy, Sahmyook University. Research in musculoskeletal and neurological rehabilitation, pain neuroscience and smart rehabilitation technology.">
+<meta property="og:title" content="Smart Rehabilitation Lab | Department of Physical Therapy, Sahmyook University">
+<meta property="og:description" content="Smart Rehabilitation Lab, Department of Physical Therapy, Sahmyook University. Research in musculoskeletal and neurological rehabilitation, pain neuroscience and smart rehabilitation technology.">
 <meta property="og:image" content="assets/img/logo.png">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/img/favicon.png">
@@ -19,28 +19,28 @@
 <section class="hero"><div class="wrap">
   <img class="brand" src="assets/img/logo.png" alt="Smart Rehabilitation Lab, Prof. Seungwon Lee">
   <h1 class="display">Movement, restored by evidence.</h1>
-  <p class="sub">삼육대학교 물리치료학과 스마트재활연구실은 근거기반 물리치료와 재활기술로 사람들이 다시 움직일 수 있도록 연구합니다.</p>
-  <div class="actions"><a class="btn" href="research.html">연구 분야 보기</a><a class="btn line" href="contact.html">연구실 합류 문의</a></div>
+  <p class="sub" data-i18n="home.sub">The Smart Rehabilitation Lab in the Department of Physical Therapy at Sahmyook University studies how evidence-based physical therapy and rehabilitation technology help people move again.</p>
+  <div class="actions"><a class="btn" href="research.html" data-i18n="home.btn1">Explore research</a><a class="btn line" href="contact.html" data-i18n="home.btn2">Join the lab</a></div>
 </div></section>
 
 <section class="lab" id="gaitlab"><div class="wrap">
-  <h2 class="headline">걷는 동안, 관절은 이렇게 움직입니다.</h2>
-  <p class="sub">보행 한 주기 동안 엉덩관절, 무릎, 발목이 어떻게 움직이는지 3D 모션캡처 방식으로 보여 줍니다. 우리는 이 움직임이 손상되고 회복되는 과정을 측정하고 중재합니다.</p>
+  <h2 class="headline" data-i18n="gait.h">While we walk, this is how our joints move.</h2>
+  <p class="sub" data-i18n="gait.p">A 3D motion-capture style view of how the hip, knee and ankle move across one gait cycle. We measure and treat how this movement is impaired and restored.</p>
 </div>
-<div class="stage"><canvas aria-label="측면에서 본 골격이 걷는 모습과 관절 각도를 보여 주는 애니메이션" role="img"></canvas>
+<div class="stage"><canvas aria-label="Animation of a skeleton walking, seen from the side, with joint angles" data-i18n-aria="gait.aria" role="img"></canvas>
   <aside class="hud" aria-live="off">
-    <div class="cap">오른쪽 다리, 시상면</div>
-    <dl><dt>엉덩관절 굴곡</dt><dd data-k="hip">0°</dd><dt>무릎 굴곡</dt><dd data-k="knee">0°</dd><dt>발목 배측굴곡</dt><dd data-k="ankle">0°</dd></dl>
-    <div class="phase"><div class="now"><span data-k="phase">입각기 Stance</span><span data-k="pct">0%</span></div>
+    <div class="cap" data-i18n="gait.cap">Right leg, sagittal plane</div>
+    <dl><dt data-i18n="gait.hip">Hip flexion</dt><dd data-k="hip">0°</dd><dt data-i18n="gait.knee">Knee flexion</dt><dd data-k="knee">0°</dd><dt data-i18n="gait.ankle">Ankle dorsiflexion</dt><dd data-k="ankle">0°</dd></dl>
+    <div class="phase"><div class="now"><span data-k="phase">Stance</span><span data-k="pct">0%</span></div>
       <div class="track"><i></i><span class="phase-dot"></span></div>
-      <div class="lbl"><span>입각기 0–60%</span><span>유각기 60–100%</span></div></div>
+      <div class="lbl"><span data-i18n="gait.stanceR">Stance 0–60%</span><span data-i18n="gait.swingR">Swing 60–100%</span></div></div>
   </aside>
 </div>
-<div class="wrap"><p class="note">3D 인체 모델의 표준 보행 애니메이션으로 재현한 시각화입니다. 관절 각도는 모델에서 계산한 값으로, 실제 측정 자료가 아닙니다.</p></div></section>
+<div class="wrap"><p class="note" data-i18n="gait.note">Visualization reproduced from a standard walking animation of a 3D human model. Joint angles are computed from the model, not measured data.</p></div></section>
 
 <section class="statement" style="margin-top:0"><div class="wrap">
   <p>We study how people get back to moving: after shoulder surgery, after a stroke, with chronic pain, and later in life.</p>
-  <p class="ko">어깨 수술 뒤에도, 뇌졸중 뒤에도, 만성통증과 함께, 그리고 나이가 들어서도 다시 움직일 수 있도록. 우리는 그 과정을 임상시험과 체계적 고찰로 검증하고, 가상현실·웨어러블 센서·뇌영상 기술로 확장합니다.</p>
+  <p class="ko" data-i18n="home.statement2">We test that process through clinical trials and systematic reviews, and extend it with virtual reality, wearable sensors and neuroimaging.</p>
 </div></section>
 
 <section class="tiles-sec"><div class="wrap-wide tiles" data-render="tiles"></div></section>
@@ -48,33 +48,34 @@
 <section class="spot"><div class="wrap">
   <p class="journal">Scientific Reports, 2025</p>
   <h2 class="title" style="color:#F5F5F7;margin-top:14px;max-width:30ch">Enhancing cognitive and physical performance in older adults through wearable sensor-based interactive cognitive-motor training: a randomized clinical trial</h2>
-  <p class="sum">웨어러블 센서 기반 인터랙티브 인지-운동 훈련이 노인의 인지 기능과 신체 수행에 미치는 효과를 무작위 임상시험으로 검증한 연구입니다.</p>
-  <div class="actions"><a class="btn dark" href="https://doi.org/10.1038/s41598-025-03725-x" target="_blank" rel="noopener">논문 보기</a></div>
+  <p class="sum" data-i18n="spot.sum">A randomized clinical trial testing how wearable sensor-based interactive cognitive-motor training affects cognitive function and physical performance in older adults.</p>
+  <div class="actions"><a class="btn dark" href="https://doi.org/10.1038/s41598-025-03725-x" target="_blank" rel="noopener" data-i18n="viewpaper">Read paper</a></div>
   <div class="bar">
-    <div><b>Randomized clinical trial</b>연구 설계</div>
-    <div><b>Older adults</b>대상</div>
-    <div><b>Wearable sensor-based cognitive-motor training</b>중재</div>
+    <div><b>Randomized clinical trial</b><span data-i18n="spot.design">Study design</span></div>
+    <div><b>Older adults</b><span data-i18n="spot.pop">Population</span></div>
+    <div><b>Wearable sensor-based cognitive-motor training</b><span data-i18n="spot.int">Intervention</span></div>
   </div>
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><h2 class="headline">최근 논문.</h2><a class="more" href="publications.html">전체 논문 보기<svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></a></div>
+  <div class="sec-head"><h2 class="headline" data-i18n="home.recent">Recent publications.</h2><a class="more" href="publications.html"><span data-i18n="allpubs">All publications</span><svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></a></div>
   <ul class="rows" data-render="rows" data-limit="5"></ul>
 </div></section>
 
 <section class="sec mist" style="padding-bottom:96px"><div class="wrap scroller-head">
-  <h2 class="headline">소식.</h2>
-  <div class="scroller-ctrl" data-scroll="newsrail"><button data-d="-1" aria-label="이전 소식"><svg viewBox="0 0 10 10"><path d="M7 1L3 5l4 4"/></svg></button><button data-d="1" aria-label="다음 소식"><svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></button></div>
+  <h2 class="headline" data-i18n="home.news">News.</h2>
+  <div class="scroller-ctrl" data-scroll="newsrail"><button data-d="-1" aria-label="Previous news" data-i18n-aria="news.prev"><svg viewBox="0 0 10 10"><path d="M7 1L3 5l4 4"/></svg></button><button data-d="1" aria-label="Next news" data-i18n-aria="news.next"><svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></button></div>
 </div>
 <div class="scroller" id="newsrail" data-render="news"></div></section>
 
 <section class="join"><div class="wrap">
-  <h2 class="headline">함께 연구할 사람을 찾습니다.</h2>
-  <p class="sub">근거기반 재활과 스마트 재활기술 연구에 관심 있는 석사·박사과정 학생과 연구원의 지원을 기다립니다.</p>
-  <div class="actions"><a class="btn" href="contact.html">지원 방법 보기</a><a class="btn line" href="members.html">구성원 보기</a></div>
+  <h2 class="headline" data-i18n="join.h">Looking for people to research with.</h2>
+  <p class="sub" data-i18n="join.p">We welcome M.S. and Ph.D. students and researchers interested in evidence-based rehabilitation and smart rehabilitation technology.</p>
+  <div class="actions"><a class="btn" href="contact.html" data-i18n="join.apply">How to apply</a><a class="btn line" href="members.html" data-i18n="join.members">Meet the members</a></div>
 </div></section>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>
 <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.min.js"}}</script>

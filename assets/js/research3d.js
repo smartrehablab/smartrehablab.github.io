@@ -46,9 +46,9 @@ const SCENES = {
   tech: {
     clip: "walk", walk: true, far: "L", az: .3, sway: .2, dist: 2.45, hgt: .58, look: .5,
     highlight: ["RightLeg", "RightFoot", "RightForeArm", "Head"],
-    hud: `<div class="cap">웨어러블 센서 기반 보행 측정</div>
-      <dl><dt>착용 센서</dt><dd>손목 2 · 정강이 2</dd><dt>케이던스</dt><dd data-k="cad">0</dd><dt>보행 주기</dt><dd data-k="pct">0%</dd></dl>
-      <p class="leg"><span><i class="or"></i>관성 센서 신호</span><span><i class="rd"></i>전전두엽 fNIRS</span></p>`,
+    hud: () => `<div class="cap">${UI("s.tech.cap")}</div>
+      <dl><dt>${UI("s.tech.sensors")}</dt><dd>${UI("s.tech.sensorsV")}</dd><dt>${UI("s.tech.cad")}</dt><dd data-k="cad">0</dd><dt>${UI("s.tech.cycle")}</dt><dd data-k="pct">0%</dd></dl>
+      <p class="leg"><span><i class="or"></i>${UI("s.tech.imu")}</span><span><i class="rd"></i>${UI("s.tech.fnirs")}</span></p>`,
     setup(c) {
       const { H, B, scene } = c;
       const podGeo = new THREE.BoxGeometry(.034 * H, .02 * H, .05 * H);
@@ -81,7 +81,7 @@ const SCENES = {
       c.fnirs.position.copy(head).lerp(top, .55); c.fnirs.position.z += .06 * c.H;
       c.fnirs.scale.setScalar((.13 + Math.sin(t * 2.4) * .025) * c.H);
       c.fnirs.material.opacity = .7 + Math.sin(t * 2.4) * .3;
-      c.hud.cad.textContent = c.cad + " 걸음/분";
+      c.hud.cad.textContent = c.cad + " " + UI("s.tech.cadU");
       c.hud.pct.textContent = Math.round(((c.mixer.time % c.clipDur) / c.clipDur) * 100) + "%";
     }
   },
@@ -89,8 +89,8 @@ const SCENES = {
   msk: {
     clip: "idle", far: "L", az: .12, sway: .1, dist: 2.85, hgt: .64, look: .6,
     highlight: ["RightArm", "RightForeArm", "RightHand", "RightShoulder"],
-    hud: `<div class="cap">어깨 관절가동범위, 시상면</div>
-      <dl><dt>어깨 굴곡</dt><dd data-k="flex">0°</dd><dt>목표 범위</dt><dd>0–160°</dd><dt>반복</dt><dd data-k="rep">1회</dd></dl>`,
+    hud: () => `<div class="cap">${UI("s.msk.cap")}</div>
+      <dl><dt>${UI("s.msk.flex")}</dt><dd data-k="flex">0°</dd><dt>${UI("s.msk.target")}</dt><dd>0–160°</dd><dt>${UI("s.msk.rep")}</dt><dd data-k="rep">${UI("s.msk.repV", 1)}</dd></dl>`,
     pose(c, t) {
       const per = 6, u = (t % per) / per;
       const e = .5 - .5 * Math.cos(u * Math.PI * 2);
@@ -129,16 +129,16 @@ const SCENES = {
       }
       c.arcFull.geometry.attributes.position.needsUpdate = true; c.arcNow.geometry.attributes.position.needsUpdate = true; c.fan.geometry.attributes.position.needsUpdate = true;
       c.hud.flex.textContent = a.toFixed(0) + "°";
-      c.hud.rep.textContent = c.rep + "회";
+      c.hud.rep.textContent = UI("s.msk.repV", c.rep);
     }
   },
 
   neuro: {
     clip: "idle", far: "L", az: .38, sway: .14, dist: 2.4, hgt: .6, look: .5,
     highlight: ["RightUpLeg", "RightLeg", "RightFoot", "Head"],
-    hud: `<div class="cap">한발 서기 균형, 오른발 지지</div>
-      <dl><dt>압력중심 이동 범위</dt><dd data-k="cop">0 mm</dd><dt>흔들림 속도</dt><dd data-k="vel">0 mm/s</dd></dl>
-      <p class="leg"><span><i class="or"></i>압력중심 궤적(확대 표시)</span><span><i class="rd"></i>경두개 자극 부위</span></p>`,
+    hud: () => `<div class="cap">${UI("s.neuro.cap")}</div>
+      <dl><dt>${UI("s.neuro.range")}</dt><dd data-k="cop">0 mm</dd><dt>${UI("s.neuro.vel")}</dt><dd data-k="vel">0 mm/s</dd></dl>
+      <p class="leg"><span><i class="or"></i>${UI("s.neuro.cop")}</span><span><i class="rd"></i>${UI("s.neuro.stim")}</span></p>`,
     pose(c, t) {
       rotW(c.B("LeftUpLeg"), X, -deg(48));
       rotW(c.B("LeftLeg"), X, deg(82));
@@ -207,9 +207,9 @@ const SCENES = {
   pain: {
     clip: "idle", far: "", az: -.95, sway: .22, dist: 2.35, hgt: .62, look: .52,
     highlight: ["Spine", "Spine1", "Spine2", "Neck", "Head"],
-    hud: `<div class="cap">통증 신호의 상행과 하행 조절</div>
-      <p class="leg"><span><i class="rd"></i>상행 통증 신호</span><span><i class="wh"></i>하행 억제 조절</span></p>
-      <dl><dt>말초 자극 부위</dt><dd>허리 · 무릎</dd><dt>중추 처리</dt><dd data-k="brain">대기</dd></dl>`,
+    hud: () => `<div class="cap">${UI("s.pain.cap")}</div>
+      <p class="leg"><span><i class="rd"></i>${UI("s.pain.up")}</span><span><i class="wh"></i>${UI("s.pain.down")}</span></p>
+      <dl><dt>${UI("s.pain.src")}</dt><dd>${UI("s.pain.srcV")}</dd><dt>${UI("s.pain.central")}</dt><dd data-k="brain">${UI("s.pain.mod")}</dd></dl>`,
     pose(c) {
       rotW(c.B("Spine"), X, deg(6));
       rotW(c.B("Neck"), X, -deg(4));
@@ -250,7 +250,7 @@ const SCENES = {
       c.glowB = Math.max((c.glowB || 0) * .96, arrive);
       c.brain.position.copy(P("Head").lerp(P("HeadTop_End"), .55));
       c.brain.scale.setScalar((.16 + c.glowB * .08) * H); c.brain.material.opacity = .35 + c.glowB * .65;
-      c.hud.brain.textContent = c.glowB > .35 ? "신호 도달" : "조절 중";
+      c.hud.brain.textContent = c.glowB > .35 ? UI("s.pain.arrived") : UI("s.pain.mod");
     }
   }
 };
@@ -260,7 +260,7 @@ function make(host, buf) {
   const cfg = SCENES[host.dataset.scene];
   if (!cfg) return;
   host.classList.add("r3");
-  host.innerHTML = `<canvas role="img" aria-label="${host.dataset.label || "3D 시각화"}"></canvas><aside class="r3-hud">${cfg.hud}</aside>`;
+  host.innerHTML = `<canvas role="img" aria-label="${host.dataset.label || UI("research.3d")}"></canvas><aside class="r3-hud">${cfg.hud()}</aside>`;
   host.closest(".area").classList.remove("noimg");
   const canvas = host.querySelector("canvas");
   const hud = {}; host.querySelectorAll("[data-k]").forEach((e) => (hud[e.dataset.k] = e));

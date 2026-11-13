@@ -244,7 +244,7 @@ function init() {
       hud.knee.textContent = (a.kneeF - kneeMin).toFixed(0) + "°";
       const an = a.ankleA - ankleBase;
       hud.ankle.textContent = (an >= 0 ? "+" : "") + an.toFixed(0) + "°";
-      hud.phase.textContent = a.footY < stanceY ? "입각기 Stance" : "유각기 Swing";
+      hud.phase.textContent = a.footY < stanceY ? UI("gait.stance") : UI("gait.swing");
       hud.pct.textContent = pct.toFixed(0) + "%";
       hud.dot.style.left = pct + "%";
 

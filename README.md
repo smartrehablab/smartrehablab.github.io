@@ -71,13 +71,20 @@ const GALLERY = [
 저장소 `Settings` → `Pages` → `Custom domain`에 도메인 입력 후,
 도메인 회사 DNS에 GitHub Pages 안내대로 레코드를 추가합니다.
 
-## 5. 구성원 정보 등록·수정 양식
+## 5. 언어 (영어 기본, 한국어·일본어 전환)
+
+- 사이트는 항상 영어로 열립니다. 메뉴 오른쪽의 EN / KO / JA를 누른 경우에만 바뀌고, 주소에 `?lang=ko` 또는 `?lang=ja`가 붙어 다른 페이지로 이동해도 유지됩니다.
+- 화면 문구: `assets/js/i18n.js`의 `STR`에 키별로 `en`, `ko`, `ja`가 있습니다. HTML에는 영어가 기본으로 들어 있고 `data-i18n="키"`로 연결됩니다.
+- 내용 데이터: `data.js`에서 `{ en: "...", ko: "...", ja: "..." }` 형태로 적으면 언어별로 나옵니다. 문자열 하나만 적으면 모든 언어에서 같은 값이 나옵니다.
+- 새 소식 예시: `{ date: "2026.12", title: { en: "...", ko: "...", ja: "..." }, text: { en: "...", ko: "...", ja: "..." }, link: "", image: "" }`
+
+## 6. 구성원 정보 등록·수정 양식
 
 - Members 페이지의 "내 정보 등록·수정하기" 버튼 → `update.html`
 - 제출 내용은 FormSubmit(formsubmit.co)을 통해 `SITE.email`(smartrehablab@gmail.com)로 전송됩니다. 처음 한 번 인증 메일의 Activate를 눌러야 동작합니다.
 - 받은 내용을 `data.js`의 `MEMBERS`에 반영합니다.
 
-## 6. 3D 장면
+## 7. 3D 장면
 
 - `assets/js/gaitlab3d.js`: 홈 3D 보행 장면 (three.js, `assets/vendor/three`, MIT License)
 - `assets/js/research3d.js`: Research 페이지 분야별 3D 장면 4종 (웨어러블 보행, 어깨 굴곡, 한발 서기 균형, 통증 신호 경로)

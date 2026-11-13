@@ -16,15 +16,16 @@
 <body data-page="pi">
 <div id="site-header"></div>
 <main>
-<div class="wrap"><p class="crumb" style="margin-top:40px"><a href="index.html">Home</a> / People / Principal Investigator</p></div>
+<div class="wrap"><p class="crumb" style="margin-top:40px"><a href="index.html" data-i18n="crumb.home">Home</a> / <span data-i18n="nav.people">People</span> / <span data-i18n="nav.pi">Principal Investigator</span></p></div>
 <section class="wrap pi" data-render="pi" style="padding-top:24px"></section>
 <section class="sec mist"><div class="wrap cv" data-render="cv"></div></section>
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><h2 class="headline">대표 논문.</h2><a class="more" href="publications.html">전체 논문 보기<svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></a></div>
+  <div class="sec-head"><h2 class="headline" data-i18n="pi.selected">Selected publications.</h2><a class="more" href="publications.html"><span data-i18n="allpubs">All publications</span><svg viewBox="0 0 10 10"><path d="M3 1l4 4-4 4"/></svg></a></div>
   <ul class="rows" data-render="selected"></ul>
 </div></section>
 </main>
 <div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/site.js"></script>
 </body>
