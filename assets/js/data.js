@@ -175,6 +175,7 @@ const MEMBERS = [
 ];
 
 const NEWS = [
+  { date: "2026.10", title: "AI motion assessment meets workplace health", text: "The lab launched an industry consulting project with (주)비솔, Gwangju Health University and Kyungnam University to build musculoskeletal workload assessment criteria for OmniVis Safety, an AI 3D motion assessment solution, covering lifting tasks, joint range of motion, 21 prevention exercises and stretching feedback.", link: "research.html#projects", linkLabel: "프로젝트 보기", image: "" },
   { date: "2026", title: "Toward digital healthcare with KOPTI", text: "Sahmyook University and Gwangju Health University met with the AI Bio-Health Research Center of the Korea Photonics Technology Institute (KOPTI) to discuss joint research in AI-driven digital healthcare and rehabilitation.", link: "", image: "" },
   { date: "2026.01", title: "Paper published in Medicine", text: "Combined self-myofascial release and Pilates improved muscle function and quality of life in women with chronic low back pain: a randomized clinical trial.", link: "https://doi.org/10.1097/MD.0000000000046971", image: "" },
   { date: "2025.05", title: "Paper published in Scientific Reports", text: "Wearable sensor-based interactive cognitive-motor training enhanced cognitive and physical performance in older adults: a randomized clinical trial.", link: "https://doi.org/10.1038/s41598-025-03725-x", image: "" }

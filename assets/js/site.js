@@ -81,7 +81,7 @@
       const list = el.dataset.limit ? NEWS.slice(0, +el.dataset.limit) : NEWS;
       el.innerHTML = list.length ? list.map((n) => `
         <article class="news"><span class="d">${esc(n.date)}</span><h3>${esc(n.title)}</h3><p>${esc(n.text)}</p>
-        ${n.link ? more(n.link, "논문 보기", true) : ""}</article>`).join("") : `<p class="empty">새 소식이 올라오면 여기에 표시됩니다.</p>`;
+        ${n.link ? more(n.link, esc(n.linkLabel || "논문 보기"), /^https?:/.test(n.link)) : ""}</article>`).join("") : `<p class="empty">새 소식이 올라오면 여기에 표시됩니다.</p>`;
       const ctrl = document.querySelector(`[data-scroll="${el.id}"]`);
       if (ctrl) ctrl.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => el.scrollBy({ left: (+b.dataset.d) * 420, behavior: "smooth" })));
     },
