@@ -57,6 +57,22 @@ const RESEARCH = [
 const PROJECTS = {
   grants: [
     {
+      collab: "Collaborative project",
+      title: "Development of Core AI Algorithms for a Bio-Psycho-Social Pain Phenotyping & Precision Intervention System (BPS-PPIS): Multimodal Biosignal Fusion, Generative Data Synthesis, and Reinforcement-Learning-based Intervention Matching",
+      titleKo: "AI기반 멀티모달 생체신호 융합-합성 및 강화학습 매칭을 활용한 만성통증 표현형 정밀 중재 시스템(BPS-PPIS) 알고리즘 개발",
+      program: "Individual Basic Research Program, Core Research (Basic Research A)",
+      funder: "Ministry of Science and ICT",
+      agency: "National Research Foundation of Korea",
+      pi: "Hyunjoong Kim (Gwangju Health University)",
+      period: "2026 – 2031",
+      span: "5 years",
+      status: "In progress",
+      totalLabel: "Year 1 funding",
+      years: [
+        { year: 2026, no: "2710115077", amount: 41000000, out: {} }
+      ]
+    },
+    {
       title: "Development of an Immersive 360-Degree VR-Based Aerobic Training System Tailored for Older Adults",
       titleKo: "노인 맞춤형 몰입 360도 VR 기반 유산소 훈련 시스템 개발",
       program: "Individual Basic Research Program",

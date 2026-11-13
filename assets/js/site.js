@@ -110,16 +110,16 @@
         return `
         <article class="grant">
           <div class="g-info">
-            <p class="g-period">${esc(g.period)}<span>${g.years.length} years</span></p>
+            ${g.collab ? `<p class="g-collab">${esc(g.collab)}</p>` : ""}<p class="g-period">${esc(g.period)}<span>${esc(g.span || g.years.length + " years")}</span>${g.status ? `<em><i></i>${esc(g.status)}</em>` : ""}</p>
             <h3>${esc(g.title)}</h3>
             <p class="g-ko">${esc(g.titleKo)}</p>
-            <dl class="g-meta"><dt>Program</dt><dd>${esc(g.program)}</dd><dt>Funder</dt><dd>${esc(g.funder)}</dd><dt>PI</dt><dd>${esc(g.pi)}</dd></dl>
+            <dl class="g-meta"><dt>Program</dt><dd>${esc(g.program)}</dd><dt>Funder</dt><dd>${esc(g.funder)}</dd>${g.agency ? `<dt>Agency</dt><dd>${esc(g.agency)}</dd>` : ""}<dt>PI</dt><dd>${esc(g.pi)}</dd></dl>
           </div>
           <div class="g-data">
-            <p class="g-total"><b title="${won(total)}">${mil(total)}</b><span>Total funding, ${won(total)}</span></p>
+            <p class="g-total"><b title="${won(total)}">${mil(total)}</b><span>${esc(g.totalLabel || "Total funding")}, ${won(total)}</span></p>
             <div class="g-bar" role="img" aria-label="연차별 연구비">${g.years.map((y, i) => `<i style="flex:${y.amount};--o:${[1, .62, .34][i % 3]}"></i>`).join("")}</div>
-            <ul class="g-years">${g.years.map((y, i) => `<li><i style="--o:${[1, .62, .34][i % 3]}"></i><b>${y.year}</b><span class="amt">${won(y.amount)}</span><span class="o">${outs(y.out).join(" · ")}</span><span class="no">No. ${esc(y.no)}</span></li>`).join("")}</ul>
-            <div class="g-out">${outs(sum, true).join("")}</div>
+            <ul class="g-years">${g.years.map((y, i) => `<li><i style="--o:${[1, .62, .34][i % 3]}"></i><b>${y.year}</b><span class="amt">${won(y.amount)}</span><span class="o">${outs(y.out).join(" · ") || "In progress"}</span><span class="no">No. ${esc(y.no)}</span></li>`).join("")}</ul>
+            ${Object.keys(sum).length ? `<div class="g-out">${outs(sum, true).join("")}</div>` : ""}
           </div>
         </article>`;
       }).join("");

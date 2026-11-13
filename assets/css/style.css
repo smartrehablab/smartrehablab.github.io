@@ -440,3 +440,6 @@ img { max-width: 100%; display: block; }
   .service { padding: 44px 24px; border-radius: 24px; }
   .s-cols { grid-template-columns: 1fr; gap: 40px; }
 }
+.g-collab { font-size: 15px; font-weight: 600; color: var(--red); margin-bottom: 8px; }
+.g-period em { font-style: normal; display: inline-flex; gap: 8px; align-items: center; color: var(--ink); font-weight: 600; margin-left: 4px; }
+.g-period em i { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 4px rgba(252, 113, 1, .2); }
