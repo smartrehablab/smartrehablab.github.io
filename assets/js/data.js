@@ -3,7 +3,7 @@ const SITE = {
   department: "Department of Physical Therapy, Sahmyook University",
   departmentKo: "삼육대학교 물리치료학과",
   address: "815 Hwarang-ro, Nowon-gu, Seoul, Republic of Korea",
-  email: "jihye3752@gmail.com",
+  email: "smartrehablab@gmail.com",
   phone: "",
   orcid: "0000-0002-0413-0510",
   scopus: "35088310300",
