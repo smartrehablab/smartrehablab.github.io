@@ -89,7 +89,7 @@
 <script>
 (function () {
   var f = document.getElementById("upd");
-  f.action = "https://formsubmit.co/" + SITE.email;
+  f.action = "https://formsubmit.co/" + (SITE.formKey || SITE.email);
   document.getElementById("next").value = location.href.split(/[?#]/)[0] + "?sent=1";
   if (/[?&]sent=1/.test(location.search)) { f.hidden = true; document.getElementById("done").hidden = false; }
   var kind = document.getElementById("kind");

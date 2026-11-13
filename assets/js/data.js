@@ -4,6 +4,7 @@ const SITE = {
   departmentKo: "삼육대학교 물리치료학과",
   address: "815 Hwarang-ro, Nowon-gu, Seoul, Republic of Korea",
   email: "smartrehablab@gmail.com",
+  formKey: "afcba5311a3bb775c56e2d8b42038b71",
   phone: "",
   orcid: "0000-0002-0413-0510",
   scopus: "35088310300",
