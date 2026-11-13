@@ -88,12 +88,12 @@
     areas(el) {
       el.innerHTML = RESEARCH.map((r) => `
         <section class="area noimg" id="${r.id}">
-          <div class="art" data-photo="${esc(r.image || "")}"></div>
+          <div class="art" data-scene="${esc(r.id)}" data-label="${esc(r.title)} 3D 시각화" data-photo="${esc(r.image || "")}"></div>
           <div><h2 class="title">${esc(r.title)}</h2><p class="desc">${esc(r.text)}</p>
             <h3>대표 연구</h3><ul class="studies">${r.studies.map((s) => `<li><a href="${esc(s.doi)}" target="_blank" rel="noopener">${esc(s.title)}</a><span>${esc(s.journal)}, ${s.year}</span></li>`).join("")}</ul></div>
         </section>`).join("");
       el.querySelectorAll("[data-photo]").forEach((a) => {
-        const src = a.dataset.photo; if (!src) return;
+        const src = a.dataset.photo; if (!src || a.dataset.scene) return;
         const im = new Image(); im.onload = () => { a.style.backgroundImage = `url("${src}")`; a.closest(".area").classList.remove("noimg"); }; im.src = src;
       });
     },
