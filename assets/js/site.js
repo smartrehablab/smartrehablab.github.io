@@ -97,6 +97,45 @@
         const im = new Image(); im.onload = () => { a.style.backgroundImage = `url("${src}")`; a.closest(".area").classList.remove("noimg"); }; im.src = src;
       });
     },
+    projects(el) {
+      const won = (n) => "₩" + n.toLocaleString("en-US");
+      const mil = (n) => "₩" + (n / 1e6).toFixed(1) + "M";
+      const OUT = [["papers", "Paper", "Papers"], ["patents", "Patent", "Patents"], ["reports", "Report", "Reports"]];
+      const outs = (o, big) => OUT.filter(([k]) => o[k]).map(([k, s1, s2]) => big
+        ? `<div><b>${o[k]}</b><span>${o[k] === 1 ? s1 : s2}</span></div>`
+        : `${o[k]} ${o[k] === 1 ? s1 : s2}`);
+      const grants = PROJECTS.grants.map((g) => {
+        const total = g.years.reduce((a, y) => a + y.amount, 0);
+        const sum = {}; g.years.forEach((y) => Object.entries(y.out).forEach(([k, v]) => (sum[k] = (sum[k] || 0) + v)));
+        return `
+        <article class="grant">
+          <div class="g-info">
+            <p class="g-period">${esc(g.period)}<span>${g.years.length} years</span></p>
+            <h3>${esc(g.title)}</h3>
+            <p class="g-ko">${esc(g.titleKo)}</p>
+            <dl class="g-meta"><dt>Program</dt><dd>${esc(g.program)}</dd><dt>Funder</dt><dd>${esc(g.funder)}</dd><dt>PI</dt><dd>${esc(g.pi)}</dd></dl>
+          </div>
+          <div class="g-data">
+            <p class="g-total"><b title="${won(total)}">${mil(total)}</b><span>Total funding, ${won(total)}</span></p>
+            <div class="g-bar" role="img" aria-label="연차별 연구비">${g.years.map((y, i) => `<i style="flex:${y.amount};--o:${[1, .62, .34][i % 3]}"></i>`).join("")}</div>
+            <ul class="g-years">${g.years.map((y, i) => `<li><i style="--o:${[1, .62, .34][i % 3]}"></i><b>${y.year}</b><span class="amt">${won(y.amount)}</span><span class="o">${outs(y.out).join(" · ")}</span><span class="no">No. ${esc(y.no)}</span></li>`).join("")}</ul>
+            <div class="g-out">${outs(sum, true).join("")}</div>
+          </div>
+        </article>`;
+      }).join("");
+      const services = PROJECTS.services.map((s) => `
+        <article class="service">
+          <div class="s-top"><p>${esc(s.kind)}</p><p class="s-when">${esc(s.period)}${s.status ? `<span><i></i>${esc(s.status)}</span>` : ""}</p></div>
+          <h3>${esc(s.title)}</h3>
+          <p class="s-ko">${esc(s.titleKo)}</p>
+          <dl class="s-meta"><dt>Client</dt><dd>${esc(s.client)}</dd><dt>Partners</dt><dd>${s.partners.map(esc).join(", ")}</dd></dl>
+          <div class="s-cols">
+            <div><h4>Scope</h4><ul>${s.scope.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+            <div><h4>Deliverables</h4><ul>${s.deliverables.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+          </div>
+        </article>`).join("");
+      el.innerHTML = `<h3 class="p-label">Research grants</h3>${grants}<h3 class="p-label">Industry projects</h3>${services}`;
+    },
     pi(el) {
       el.classList.add("nophoto");
       el.innerHTML = `

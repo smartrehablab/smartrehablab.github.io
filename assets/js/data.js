@@ -54,6 +54,63 @@ const RESEARCH = [
   }
 ];
 
+const PROJECTS = {
+  grants: [
+    {
+      title: "Development of an Immersive 360-Degree VR-Based Aerobic Training System Tailored for Older Adults",
+      titleKo: "노인 맞춤형 몰입 360도 VR 기반 유산소 훈련 시스템 개발",
+      program: "Individual Basic Research Program",
+      funder: "Ministry of Education",
+      pi: "Seungwon Lee (Sahmyook University)",
+      period: "2018 – 2020",
+      years: [
+        { year: 2018, no: "1345276587", amount: 50000000, out: { papers: 3 } },
+        { year: 2019, no: "1345296904", amount: 50000000, out: { papers: 3 } },
+        { year: 2020, no: "1345315145", amount: 12500000, out: { papers: 1, patents: 2, reports: 1 } }
+      ]
+    },
+    {
+      title: "Development of a Wearable Sensor-Based Interactive Training System for Cognitive Improvement in Older Adults",
+      titleKo: "노인 인지 개선을 위한 웨어러블 센서 기반 인터랙티브 훈련 시스템 개발",
+      program: "Individual Basic Research Program",
+      funder: "Ministry of Science and ICT",
+      pi: "Seungwon Lee (Sahmyook University)",
+      period: "2022 – 2023",
+      years: [
+        { year: 2022, no: "1711169838", amount: 53119000, out: { patents: 1, reports: 1 } },
+        { year: 2023, no: "1711182715", amount: 58080000, out: { papers: 1, patents: 1 } }
+      ]
+    }
+  ],
+  services: [
+    {
+      kind: "Industry consulting",
+      title: "Musculoskeletal Workload Assessment Criteria for the AI 3D Motion Assessment Solution OmniVis Safety",
+      titleKo: "AI 3D 모션평가 솔루션(OmniVis Safety) 근골격계 부담작업 평가기준 개발 컨설팅",
+      client: "(주)비솔",
+      partners: ["Sahmyook University", "Gwangju Health University", "Kyungnam University", "(주)비솔"],
+      period: "2026.10 –",
+      status: "In progress",
+      scope: [
+        "Lifting task assessment criteria integrating the Revised NIOSH Lifting Equation, WAC, REBA and OWAS",
+        "Assessment criteria for range of motion and joint angles during lifting",
+        "Movement assessment criteria for 21 musculoskeletal disorder prevention exercises",
+        "Feedback message system and matching rules for preventive stretching recommendations",
+        "Worker and manager reports and a manager dashboard"
+      ],
+      deliverables: [
+        "Kick-off meeting materials",
+        "Evidence compendium for each assessment variable",
+        "Range of motion criteria and joint angle criteria for lifting",
+        "Integrated scoring criteria for lifting tasks",
+        "Assessment, feedback and stretching recommendation linkage with screen design specification",
+        "Instructions for 24 preventive stretches",
+        "Revised template for musculoskeletal workload management reports"
+      ]
+    }
+  ]
+};
+
 const PI = {
   name: "Seungwon Lee, PhD",
   nameKo: "",
