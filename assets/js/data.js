@@ -175,7 +175,7 @@ const MEMBERS = [
 ];
 
 const NEWS = [
-  { date: "2026.09", title: "Paper published in Physical Therapy Rehabilitation Science", text: "Effects of radial extracorporeal shock wave therapy combined with blood flow restriction exercise on Q-angle and plantar pressure in adults with genu varum.", link: "https://doi.org/10.14474/ptrs.2026.15.3.445", image: "" },
+  { date: "2026", title: "Toward digital healthcare with KOPTI", text: "Sahmyook University and Gwangju Health University met with the AI Bio-Health Research Center of the Korea Photonics Technology Institute (KOPTI) to discuss joint research in AI-driven digital healthcare and rehabilitation.", link: "", image: "" },
   { date: "2026.01", title: "Paper published in Medicine", text: "Combined self-myofascial release and Pilates improved muscle function and quality of life in women with chronic low back pain: a randomized clinical trial.", link: "https://doi.org/10.1097/MD.0000000000046971", image: "" },
   { date: "2025.05", title: "Paper published in Scientific Reports", text: "Wearable sensor-based interactive cognitive-motor training enhanced cognitive and physical performance in older adults: a randomized clinical trial.", link: "https://doi.org/10.1038/s41598-025-03725-x", image: "" }
 ];
