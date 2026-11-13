@@ -82,7 +82,7 @@ const MEMBERS = [
   {
     group: "Researchers",
     people: [
-      { name: "Jihye Jung, PT, PhD", role: "Post-Doctoral Researcher", interests: "Neuroscience, Geriatrics", email: "jihye3752@gmail.com", photo: "" },
+      { name: "Jihye Jung, PT, PhD", role: "Post-Doctoral Researcher", interests: "Neuroscience, Geriatrics", email: "jihye3752@gmail.com", photo: "assets/img/members/jung-jihye.jpg" },
       { name: "Wonhyung Kang, PT, MS Candidate", role: "Master's Student Researcher", interests: "MSK disorders, Exercise", email: "dannykangwh@naver.com", photo: "" }
     ]
   },
