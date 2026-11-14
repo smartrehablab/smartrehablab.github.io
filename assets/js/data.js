@@ -181,7 +181,7 @@ const MEMBERS = [
   {
     group: { en: "Alumni", ko: "졸업생", ja: "修了生" },
     people: [
-      { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2011", position: { en: "Department of Physical Therapy, Joongbu University", ko: "중부대학교 물리치료학과", ja: "中部大学校 理学療法学科" }, photo: "assets/img/members/choi-wonjae.jpg" },
+      { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2015", position: { en: "Department of Physical Therapy, Joongbu University", ko: "중부대학교 물리치료학과", ja: "中部大学校 理学療法学科" }, photo: "assets/img/members/choi-wonjae.jpg" },
       { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", position: { en: "Department of Physical Therapy, Gwangju Health University", ko: "광주보건대학교 물리치료학과", ja: "光州保健大学校 理学療法学科" }, photo: "assets/img/members/lee-eunsang.jpg" },
       { name: "Hyunjoong Kim, PT, PhD", role: "Ph.D., 2022", position: { en: "Department of Senior Exercise Prescription, Gwangju Health University", ko: "광주보건대학교 시니어운동처방학과", ja: "光州保健大学校 シニア運動処方学科" }, photo: "assets/img/members/kim-hyunjoong.jpg" },
       { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2024", position: { en: "Department of Physical Therapy, Kyungnam University", ko: "경남대학교 물리치료학과", ja: "慶南大学校 理学療法学科" }, photo: "assets/img/members/sim-jeongu.jpg" }
