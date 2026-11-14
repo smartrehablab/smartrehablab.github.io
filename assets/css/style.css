@@ -504,3 +504,8 @@ html[lang="ja"] body { font-family: "Pretendard Variable", "Pretendard", -apple-
   .gnav .lang + .burger { margin-left: 6px; }
 }
 html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: strict; overflow-wrap: break-word; }
+@media (max-width: 860px) {
+  /* the blurred header becomes the containing block for its fixed menu, so size the menu explicitly */
+  .gnav nav { inset: auto; top: 64px; left: 0; right: 0; width: 100vw; height: calc(100vh - 64px); height: calc(100dvh - 64px); z-index: 99; box-shadow: 0 1px 0 rgba(0, 0, 0, .08) inset; }
+}
+.menu-open .gnav { background: #fff; }
