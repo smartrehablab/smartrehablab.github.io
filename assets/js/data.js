@@ -178,8 +178,9 @@ const MEMBERS = [
   { group: { en: "Graduate Students (M.S.)", ko: "석사과정", ja: "修士課程" }, people: [] },
   { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [] },
   { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [] },
+  { group: { en: "Alumni (M.S.)", ko: "석사 졸업생", ja: "修士課程修了生" }, people: [] },
   {
-    group: { en: "Alumni", ko: "졸업생", ja: "修了生" },
+    group: { en: "Alumni (Ph.D.)", ko: "박사 졸업생", ja: "博士課程修了生" },
     people: [
       { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2015", interests: "Geriatric Rehabilitation", position: { en: "Department of Physical Therapy, Joongbu University", ko: "중부대학교 물리치료학과", ja: "中部大学校 理学療法学科" }, photo: "assets/img/members/choi-wonjae.jpg" },
       { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", interests: "Orthopedic Physical Therapy", position: { en: "Department of Physical Therapy, Gwangju Health University", ko: "광주보건대학교 물리치료학과", ja: "光州保健大学校 理学療法学科" }, photo: "assets/img/members/lee-eunsang.jpg" },
