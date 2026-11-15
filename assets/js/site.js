@@ -159,7 +159,7 @@
       el.innerHTML = PI.selected.map((d) => pubs.find((p) => p.doi === d)).filter(Boolean).map(row).join("");
     },
     members(el) {
-      el.innerHTML = MEMBERS.filter((g) => g.people.length).map((g) => `
+      el.innerHTML = MEMBERS.map((g) => `
         <section class="group"><h2>${esc(T(g.group))}</h2><div class="people">
         ${g.people.map((p) => `
           <div class="person${p.photo ? "" : " nophoto"}">${p.photo ? `<div class="ph" style="background-image:url('${esc(p.photo)}')"></div>` : ""}
