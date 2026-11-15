@@ -509,3 +509,5 @@ html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: s
   .gnav nav { inset: auto; top: 64px; left: 0; right: 0; width: 100vw; height: calc(100vh - 64px); height: calc(100dvh - 64px); z-index: 99; box-shadow: 0 1px 0 rgba(0, 0, 0, .08) inset; }
 }
 .menu-open .gnav { background: #fff; }
+.person .orcid { display: inline-flex; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; }
+.person .orcid i { font-style: normal; font-size: 9px; font-weight: 700; color: #fff; background: #A6CE39; border-radius: 50%; width: 15px; height: 15px; display: inline-grid; place-items: center; letter-spacing: -.02em; }

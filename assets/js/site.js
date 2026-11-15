@@ -164,7 +164,7 @@
         ${g.people.map((p) => `
           <div class="person${p.photo ? "" : " nophoto"}">${p.photo ? `<div class="ph" style="background-image:url('${esc(p.photo)}')"></div>` : ""}
             <h3>${esc(p.name)}</h3><div class="role">${esc(p.role)}</div>
-            <div class="info">${p.interests ? esc(p.interests) + "<br>" : ""}${p.position ? esc(T(p.position)) + "<br>" : ""}${p.email ? `<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>` : ""}</div></div>`).join("")}
+            <div class="info">${p.interests ? esc(p.interests) + "<br>" : ""}${p.position ? esc(T(p.position)) + "<br>" : ""}${p.email ? `<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>` : ""}${p.orcid ? `${p.email ? "<br>" : ""}<a class="orcid" href="https://orcid.org/${esc(p.orcid)}" target="_blank" rel="noopener" aria-label="ORCID ${esc(p.orcid)}"><i>iD</i>${esc(p.orcid)}</a>` : ""}</div></div>`).join("")}
         </div></section>`).join("");
     },
     pubapp(el) {
