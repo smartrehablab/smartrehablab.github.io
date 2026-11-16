@@ -29,6 +29,7 @@
 <form class="wrap upd" id="upd" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_subject" value="[Smart Rehab Lab] 구성원 정보 등록·수정 요청">
   <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_next" id="next">
   <input type="hidden" name="화면 언어" id="ulang">
   <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -107,7 +108,7 @@
     var p = document.getElementById("photo").files[0];
     err.textContent = "";
     if (p && p.size > 5 * 1024 * 1024) { e.preventDefault(); err.textContent = UI("upd.big"); return; }
-    if (!window.fetch || !window.FormData) return;
+    if (p || !window.fetch || !window.FormData) { send.disabled = true; send.textContent = UI("upd.sending"); return; }
     e.preventDefault();
     var data = new FormData(f);
     data.delete("_next");
