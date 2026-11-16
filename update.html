@@ -39,7 +39,7 @@
       <label class="f"><span data-i18n="upd.reqType">Request type</span>
         <select name="요청 구분" required><option value="" data-i18n="upd.select">Select</option><option value="신규 등록" data-i18n="upd.o.new">New profile</option><option value="정보 수정" data-i18n="upd.o.edit">Update information</option><option value="사진만 교체" data-i18n="upd.o.photo">Replace photo only</option><option value="삭제 요청" data-i18n="upd.o.del">Remove profile</option></select></label>
       <label class="f"><span data-i18n="upd.kind">Member type</span>
-        <select name="구분" id="kind" required><option value="" data-i18n="upd.select">Select</option><option value="Researcher">Researcher</option><option value="Ph.D. 과정" data-i18n="upd.o.phd">Ph.D. student</option><option value="M.S. 과정" data-i18n="upd.o.ms">M.S. student</option><option value="박사 수료" data-i18n="upd.o.cand">Ph.D. candidate (coursework completed)</option><option value="졸업생" data-i18n="upd.o.alum">Alumni</option></select></label>
+        <select name="구분" id="kind" required><option value="" data-i18n="upd.select">Select</option><option value="Researcher">Researcher</option><option value="M.S. 과정" data-i18n="upd.o.ms">M.S. student</option><option value="Ph.D. 과정" data-i18n="upd.o.phd">Ph.D. student</option><option value="박사 수료" data-i18n="upd.o.cand">Ph.D. candidate (coursework completed)</option><option value="석사 졸업생" data-i18n="upd.o.alumMS">Alumni (M.S.)</option><option value="박사 졸업생" data-i18n="upd.o.alumPhD">Alumni (Ph.D.)</option></select></label>
     </div>
   </fieldset>
 
@@ -66,10 +66,7 @@
 
   <fieldset data-for="alumni" hidden>
     <legend data-i18n="upd.alumni">Graduation</legend>
-    <div class="f-row">
-      <label class="f"><span data-i18n="upd.degree">Degree</span><select name="취득 학위"><option value="" data-i18n="upd.select">Select</option><option value="Ph.D.">Ph.D.</option><option value="M.S.">M.S.</option></select></label>
-      <label class="f"><span data-i18n="upd.gradYear">Year of graduation</span><input name="졸업연도" inputmode="numeric" placeholder="2024"></label>
-    </div>
+    <label class="f"><span data-i18n="upd.gradYear">Year of graduation</span><input name="졸업연도" inputmode="numeric" placeholder="2024"></label>
     <label class="f"><span data-i18n="upd.position">Current affiliation and position</span><input name="현재 소속·직위" placeholder="Assistant Professor, Department of Physical Therapy, OO University" data-i18n-ph="upd.positionPh"></label>
   </fieldset>
 
@@ -99,7 +96,7 @@
   if (/[?&]sent=1/.test(location.search)) done();
   var kind = document.getElementById("kind");
   function sync() {
-    var v = kind.value, map = { student: /과정|수료/.test(v), alumni: v === "졸업생" };
+    var v = kind.value, map = { student: /과정|수료/.test(v), alumni: /졸업생/.test(v) };
     f.querySelectorAll("fieldset[data-for]").forEach(function (fs) {
       var on = !!map[fs.dataset.for]; fs.hidden = !on;
       fs.querySelectorAll("input,select").forEach(function (i) { i.disabled = !on; });
