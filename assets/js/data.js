@@ -88,6 +88,24 @@ const PROJECTS = {
       ]
     },
     {
+      title: {
+        en: "Development of a Wearable Zone-Based Cognitive-Motor Training System for Older Adults",
+        ko: "노인 대상 Zone 인식기반 착용형 인지-운동 훈련 시스템 개발 및 효과성 검증",
+        ja: "高齢者を対象としたゾーン認識ベース着用型認知運動トレーニングシステムの開発と効果検証"
+      },
+      program: { en: "Humanities and Social Sciences Basic Research Program, Research Professor (Type A)", ko: "인문사회기초연구, (A유형) 인문사회학술연구교수", ja: "人文社会基礎研究事業、(A類型)人文社会学術研究教授" },
+      funder: { en: "Ministry of Education", ko: "교육부", ja: "教育部" },
+      agency: { en: "National Research Foundation of Korea", ko: "한국연구재단", ja: "韓国研究財団" },
+      pi: { en: "Jihye Jung (Sahmyook University)", ko: "정지혜 (삼육대학교)", ja: "Jihye Jung(三育大学校)" },
+      period: "2026 – 2031",
+      spanYears: 5,
+      ongoing: true,
+      firstYearOnly: true,
+      years: [
+        { year: 2026, no: "2340060177", amount: 30000000, out: {} }
+      ]
+    },
+    {
       collab: true,
       title: {
         en: "Development of Core AI Algorithms for a Bio-Psycho-Social Pain Phenotyping & Precision Intervention System (BPS-PPIS): Multimodal Biosignal Fusion, Generative Data Synthesis, and Reinforcement-Learning-based Intervention Matching",
