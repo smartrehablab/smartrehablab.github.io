@@ -368,3 +368,12 @@ const PUBLICATIONS = [
     {"title": "Effects of combined exercise training on balance of Hemiplegic stroke patients", "journal": "Journal of Physical Therapy Science", "date": "2011", "doi": "https://doi.org/10.1589/jpts.23.639"},
     {"title": "Effects of motor imagery training on gait ability of patients with chronic stroke", "journal": "Journal of Physical Therapy Science", "date": "2011", "doi": "https://doi.org/10.1589/jpts.23.197"}
 ];
+
+const COLLABORATORS = [
+  { name: { en: "Gwangju Health University", ko: "광주보건대학교", ja: "光州保健大学校" }, logo: "assets/img/collab/ghu.png" },
+  { name: { en: "Kyungnam University", ko: "경남대학교", ja: "慶南大学校" }, logo: "assets/img/collab/kyungnam.png" },
+  { name: { en: "Joongbu University", ko: "중부대학교", ja: "中部大学校" }, logo: "assets/img/collab/joongbu.png" },
+  { name: { en: "VISOL", ko: "(주)비솔", ja: "VISOL" }, logo: "assets/img/collab/visol.png" },
+  { name: { en: "NMS Lab", ko: "NMS Lab", ja: "NMS Lab" }, logo: "assets/img/collab/nmslab.png" },
+  { name: { en: "Korea Photonics Technology Institute", ko: "한국광기술원", ja: "韓国光技術院" }, logo: "assets/img/collab/kopti.png" }
+];

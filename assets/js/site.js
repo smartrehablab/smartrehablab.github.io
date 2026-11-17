@@ -17,7 +17,10 @@
       { id: "members", label: UI("nav.members"), href: "members.html" }
     ] },
     { id: "publications", label: UI("nav.publications"), href: "publications.html" },
-    { id: "news", label: UI("nav.news"), href: "news.html" },
+    { id: "board", label: UI("nav.board"), children: [
+      { id: "news", label: UI("nav.news"), href: "news.html" },
+      { id: "collaborators", label: UI("nav.collab"), href: "collaborators.html" }
+    ] },
     { id: "gallery", label: UI("nav.gallery"), href: "gallery.html", hide: GALLERY.length === 0 }
   ];
 
@@ -49,7 +52,7 @@
         <div class="cols">
           <div><div class="mark"><img src="assets/img/logo-mark.png" alt="">Smart Rehabilitation Lab</div>
             <p>${esc(T(SITE.department))}<br>${esc(T(SITE.address))}</p></div>
-          <div><h4>${UI("foot.lab")}</h4><ul><li><a href="about.html">${UI("nav.about")}</a></li><li><a href="research.html">${UI("nav.research")}</a></li><li><a href="news.html">${UI("nav.news")}</a></li></ul></div>
+          <div><h4>${UI("foot.lab")}</h4><ul><li><a href="about.html">${UI("nav.about")}</a></li><li><a href="research.html">${UI("nav.research")}</a></li><li><a href="news.html">${UI("nav.news")}</a></li><li><a href="collaborators.html">${UI("nav.collab")}</a></li></ul></div>
           <div><h4>${UI("nav.people")}</h4><ul><li><a href="pi.html">${UI("nav.pi")}</a></li><li><a href="members.html">${UI("nav.members")}</a></li><li><a href="publications.html">${UI("nav.publications")}</a></li></ul></div>
           <div><h4>${UI("nav.contact")}</h4><ul><li><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a></li>${SITE.phone ? `<li>${esc(SITE.phone)}</li>` : ""}<li><a href="https://orcid.org/${SITE.orcid}" target="_blank" rel="noopener">ORCID ${SITE.orcid}</a></li></ul></div>
         </div>
@@ -73,6 +76,10 @@
     rows(el) {
       const list = pubs.slice(0, +(el.dataset.limit || 5));
       el.innerHTML = list.map(row).join("");
+    },
+    collaborators(el) {
+      el.innerHTML = COLLABORATORS.map((c) => `
+        <article class="collab"><div class="logo">${c.logo ? `<img src="${esc(c.logo)}" alt="${esc(T(c.name))}">` : `<span>${esc(T(c.name))}</span>`}</div><h3>${esc(T(c.name))}</h3></article>`).join("");
     },
     news(el) {
       const list = el.dataset.limit ? NEWS.slice(0, +el.dataset.limit) : NEWS;

@@ -511,3 +511,12 @@ html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: s
 .menu-open .gnav { background: #fff; }
 .person .orcid { display: inline-flex; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; }
 .person .orcid i { font-style: normal; font-size: 9px; font-weight: 700; color: #fff; background: #A6CE39; border-radius: 50%; width: 15px; height: 15px; display: inline-grid; place-items: center; letter-spacing: -.02em; }
+
+.collab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.collab { background: #fff; border-radius: 22px; padding: 28px 24px 24px; text-align: center; }
+.collab .logo { height: 130px; display: grid; place-items: center; padding: 0 12px; }
+.collab .logo img { max-width: 100%; max-height: 110px; object-fit: contain; }
+.collab .logo span { font-size: 15px; font-weight: 700; color: #B9B9BE; letter-spacing: -.01em; }
+.collab h3 { font-size: 17px; line-height: 1.35; letter-spacing: -.02em; margin-top: 16px; padding-top: 16px; border-top: 1px solid #EDEDF0; }
+@media (max-width: 960px) { .collab-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .collab-grid { gap: 12px; } .collab { padding: 20px 14px 18px; } .collab .logo { height: 80px; padding: 0 4px; } .collab .logo img { max-height: 68px; } .collab h3 { font-size: 15px; } }

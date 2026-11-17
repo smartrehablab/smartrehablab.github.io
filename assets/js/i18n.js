@@ -48,6 +48,8 @@
     "nav.members": { en: "Members", ko: "연구원·학생", ja: "研究員・学生" },
     "nav.publications": { en: "Publications", ko: "논문", ja: "論文" },
     "nav.news": { en: "News", ko: "소식", ja: "ニュース" },
+    "nav.board": { en: "Board", ko: "게시판", ja: "掲示板" },
+    "nav.collab": { en: "Collaborators", ko: "협력기관", ja: "協力機関" },
     "nav.gallery": { en: "Gallery", ko: "갤러리", ja: "ギャラリー" },
     "nav.contact": { en: "Contact", ko: "문의", ja: "お問い合わせ" },
     "nav.main": { en: "Main menu", ko: "주 메뉴", ja: "メインメニュー" },
