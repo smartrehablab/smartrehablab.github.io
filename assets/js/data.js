@@ -278,6 +278,36 @@ const NEWS = [
       ja: "ウェアラブルセンサを用いたインタラクティブ認知運動トレーニングが、高齢者の認知機能と身体パフォーマンスを向上させました(無作為化臨床試験)。"
     },
     link: "https://doi.org/10.1038/s41598-025-03725-x", image: ""
+  },
+  {
+    date: "2025.03",
+    title: { en: "2nd Korea-Japan International Rehabilitation Symposium", ko: "제2회 한·일 재활 국제심포지엄", ja: "第2回 日韓リハビリテーション国際シンポジウム" },
+    text: {
+      en: "Co-organized by the Smart Rehabilitation Lab with Sahmyook's Applied Physical Therapy Institute and Research Institute for Independent Living, the symposium with sister school Teikyo Heisei University (Mar 27 to 28) compared rehabilitation education and practice in both countries. Prof. Seungwon Lee presented on physical therapy education in Korea.",
+      ko: "스마트재활연구소가 응용물리치료연구소, 장애인·노인 자립지원종합연구소와 공동 주관하여 일본 자매대학 테이쿄헤이세이대학과 심포지엄을 열었습니다(3월 27~28일). 양국의 재활 교육과 임상 현황을 논의했고, 이승원 교수가 한국 물리치료 교육의 현황과 과제를 발표했습니다.",
+      ja: "スマートリハビリテーション研究所は、応用理学療法研究所、障害者・高齢者自立支援総合研究所と共同で、姉妹校の帝京平成大学とシンポジウムを開催しました(3月27〜28日)。両国のリハビリテーション教育と臨床の現状を議論し、李承元教授が韓国の理学療法教育の現状と課題を発表しました。"
+    },
+    link: "https://v.daum.net/v/20250331154405045", linkLabel: "readarticle", image: ""
+  },
+  {
+    date: "2021",
+    title: { en: "Policy report on home-visit physical therapy", ko: "방문물리치료 국외 현황 정책연구보고서 발간", ja: "訪問理学療法の政策研究報告書を発刊" },
+    text: {
+      en: "2020 Policy Research Report: An Analysis of Home-Visit Physical Therapy Abroad, by Seungwon Lee, Jihye Jung and Hyunjoong Kim with the Seoul branch of the Korean Physical Therapy Association, was published by Euihak Seowon (ISBN 9791163080329).",
+      ko: "이승원, 정지혜, 김현중과 대한물리치료사협회 서울특별시회가 참여한 「2020 정책연구보고서: 방문물리치료의 국외 현황분석」이 의학서원에서 발간되었습니다(ISBN 9791163080329).",
+      ja: "李承元、鄭智惠、金賢重と大韓理学療法士協会ソウル特別市会による「2020政策研究報告書:訪問理学療法の国外現況分析」が医学書院(韓国)から発刊されました(ISBN 9791163080329)。"
+    },
+    link: "", image: ""
+  },
+  {
+    date: "2019.09",
+    title: { en: "Academic exchange seminar with Morinomiya University of Medical Sciences", ko: "일본 모리노미야 의과대학과 국제학술교류 세미나", ja: "森ノ宮医療大学と国際学術交流セミナー" },
+    text: {
+      en: "Under the department chaired by Prof. Seungwon Lee, Sahmyook University hosted sister school Morinomiya University of Medical Sciences for a research seminar, the first of annual reciprocal visits under the agreement signed in 2018.",
+      ko: "삼육대 물리치료학과(학과장 이승원)가 자매대학인 일본 모리노미야 의과대학 물리치료학과와 국제학술교류 세미나를 열었습니다. 2018년 양교 협약에 따라 매년 교차 방문해 학술대회를 이어가기로 했습니다.",
+      ja: "三育大学校理学療法学科(学科長 李承元)は、姉妹校である森ノ宮医療大学理学療法学科と国際学術交流セミナーを開催しました。2018年の協定に基づき、毎年相互訪問して学術大会を続けることになりました。"
+    },
+    link: "https://www.kyeonggi.com/article/201909181086855", linkLabel: "readarticle", image: ""
   }
 ];
 

@@ -67,6 +67,7 @@
     "allpubs": { en: "All publications", ko: "전체 논문 보기", ja: "すべての論文を見る" },
     "viewpaper": { en: "Read paper", ko: "논문 보기", ja: "論文を見る" },
     "viewproject": { en: "View project", ko: "프로젝트 보기", ja: "プロジェクトを見る" },
+    "readarticle": { en: "Read article", ko: "기사 보기", ja: "記事を見る" },
     "explore": { en: "Explore research", ko: "연구 자세히 보기", ja: "研究の詳細を見る" },
     "news.empty": { en: "New updates will appear here.", ko: "새 소식이 올라오면 여기에 표시됩니다.", ja: "新しいお知らせはここに表示されます。" },
     "news.prev": { en: "Previous news", ko: "이전 소식", ja: "前のニュース" },
