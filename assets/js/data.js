@@ -202,7 +202,7 @@ const MEMBERS = [
       { name: "Yonghyeon An, PT, BSc", role: "M.S. Student", interests: "Neurological Rehabilitation", email: "ankgg547@gmail.com", orcid: "0009-0006-6038-1636", photo: "assets/img/members/an-yonghyeon.jpg" },
       { name: "Boreum Han, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", email: "bbbreum@syuin.ac.kr", photo: "assets/img/members/han-boreum.jpg" },
       { name: "Jonghun Lee, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", email: "leejh178@naver.com", photo: "assets/img/members/lee-jonghun.jpg" },
-      { name: "Jihyuk Yang, PT, BSc", role: "M.S. Student", interests: "Vestibular Rehabilitation" }
+      { name: "Jihyuk Yang, PT, BSc", role: "M.S. Student", interests: "Vestibular Rehabilitation", photo: "assets/img/members/yang-jihyuk.jpg" }
     ]
   },
   { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [
