@@ -193,7 +193,12 @@ const MEMBERS = [
       { name: "Wonhyung Kang, PT, MS Candidate", role: "Master's Student Researcher", interests: "MSK disorders, Exercise", email: "dannykangwh@naver.com", photo: "assets/img/members/kang-wonhyung.jpg" }
     ]
   },
-  { group: { en: "Graduate Students (M.S.)", ko: "석사과정", ja: "修士課程" }, people: [] },
+  {
+    group: { en: "Graduate Students (M.S.)", ko: "석사과정", ja: "修士課程" },
+    people: [
+      { name: "Seungwoo Kim, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", photo: "assets/img/members/kim-seungwoo.jpg" }
+    ]
+  },
   { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [] },
   { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [] },
   { group: { en: "Alumni (M.S.)", ko: "석사 졸업생", ja: "修士課程修了生" }, people: [] },
