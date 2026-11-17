@@ -520,3 +520,7 @@ html[lang="ja"] body, html[lang="ja"] body * { word-break: normal; line-break: s
 .collab h3 { font-size: 17px; line-height: 1.35; letter-spacing: -.02em; margin-top: 16px; padding-top: 16px; border-top: 1px solid #EDEDF0; }
 @media (max-width: 960px) { .collab-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .collab-grid { gap: 12px; } .collab { padding: 20px 14px 18px; } .collab .logo { height: 80px; padding: 0 4px; } .collab .logo img { max-height: 68px; } .collab h3 { font-size: 15px; } }
+a.collab { display: block; color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+a.collab:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.08); }
+a.collab:hover h3 { color: var(--red); }
+.collab .ext { font-size: .8em; color: var(--red); }

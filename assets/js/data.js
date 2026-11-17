@@ -405,5 +405,5 @@ const COLLABORATORS = [
   { name: { en: "Kyungnam University", ko: "경남대학교", ja: "慶南大学校" }, logo: "assets/img/collab/kyungnam.png" },
   { name: { en: "VISOL", ko: "(주)비솔", ja: "VISOL" }, logo: "assets/img/collab/visol.png" },
   { name: { en: "Korea Photonics Technology Institute", ko: "한국광기술원", ja: "韓国光技術院" }, logo: "assets/img/collab/kopti.png" },
-  { name: { en: "NMS Lab", ko: "NMS Lab", ja: "NMS Lab" }, logo: "assets/img/collab/nmslab.png" }
+  { name: { en: "NMS Lab", ko: "NMS Lab", ja: "NMS Lab" }, logo: "assets/img/collab/nmslab.png", url: "https://nmslab.org/" }
 ];

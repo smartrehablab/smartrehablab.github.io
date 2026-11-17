@@ -79,7 +79,7 @@
     },
     collaborators(el) {
       el.innerHTML = COLLABORATORS.map((c) => `
-        <article class="collab"><div class="logo">${c.logo ? `<img src="${esc(c.logo)}" alt="${esc(T(c.name))}">` : `<span>${esc(T(c.name))}</span>`}</div><h3>${esc(T(c.name))}</h3></article>`).join("");
+        ${c.url ? `<a class="collab" href="${esc(c.url)}" target="_blank" rel="noopener">` : `<article class="collab">`}<div class="logo">${c.logo ? `<img src="${esc(c.logo)}" alt="${esc(T(c.name))}">` : `<span>${esc(T(c.name))}</span>`}</div><h3>${esc(T(c.name))}${c.url ? ` <span class="ext">↗</span>` : ""}</h3>${c.url ? `</a>` : `</article>`}`).join("");
     },
     news(el) {
       const list = el.dataset.limit ? NEWS.slice(0, +el.dataset.limit) : NEWS;
