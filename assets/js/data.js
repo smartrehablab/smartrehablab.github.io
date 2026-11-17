@@ -196,11 +196,17 @@ const MEMBERS = [
   {
     group: { en: "Graduate Students (M.S.)", ko: "석사과정", ja: "修士課程" },
     people: [
-      { name: "Seungwoo Kim, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", photo: "assets/img/members/kim-seungwoo.jpg" }
+      { name: "Seungwoo Kim, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", photo: "assets/img/members/kim-seungwoo.jpg" },
+      { name: "Hyein Kwon, PT, BSc", role: "M.S. Student", interests: "Pediatric Physical Therapy", email: "kumju2@naver.com", orcid: "0009-0001-9153-0976", photo: "assets/img/members/kwon-hyein.jpg" },
+      { name: "Yonghwan Kim, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", email: "kyhitb@naver.com", orcid: "0009-0008-7964-6221", photo: "assets/img/members/kim-yonghwan.jpg" }
     ]
   },
-  { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [] },
-  { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [] },
+  { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [
+      { name: "Yunji Jo, PT, MSc", role: "Ph.D. Student", interests: "Pediatric Physical Therapy", email: "yuuunji@naver.com", orcid: "0009-0004-0348-321X", photo: "assets/img/members/jo-yunji.jpg" }
+    ] },
+  { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [
+      { name: "Sangbong Lee, PT, PhD Candidate", role: "Ph.D. Candidate", interests: "Neuromuscular Control", email: "leesb109@naver.com", photo: "assets/img/members/lee-sangbong.jpg" }
+    ] },
   { group: { en: "Alumni (M.S.)", ko: "석사 졸업생", ja: "修士課程修了生" }, people: [] },
   {
     group: { en: "Alumni (Ph.D.)", ko: "박사 졸업생", ja: "博士課程修了生" },
