@@ -189,8 +189,8 @@ const MEMBERS = [
   {
     group: { en: "Researchers", ko: "연구원", ja: "研究員" },
     people: [
-      { name: "Jihye Jung, PT, PhD", role: "Senior Researcher", interests: "Neuroscience, Geriatrics", email: "jihye3752@gmail.com", photo: "assets/img/members/jung-jihye.jpg" },
-      { name: "Wonhyung Kang, PT, MS Candidate", role: "Master's Student Researcher", interests: "MSK disorders, Exercise", email: "dannykangwh@naver.com", photo: "assets/img/members/kang-wonhyung.jpg" }
+      { name: "Jihye Jung, PT, PhD", role: "Senior Researcher", interests: "Neuroscience", email: "jihye3752@gmail.com", photo: "assets/img/members/jung-jihye.jpg" },
+      { name: "Wonhyung Kang, PT, MS Candidate", role: "Master's Student Researcher", interests: "Kinesiology", email: "dannykangwh@naver.com", photo: "assets/img/members/kang-wonhyung.jpg" }
     ]
   },
   {
