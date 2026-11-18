@@ -233,7 +233,7 @@ const MEMBERS = [
       { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", interests: "Orthopedic Physical Therapy", position: { en: "Department of Physical Therapy, Gwangju Health University", ko: "광주보건대학교 물리치료학과", ja: "光州保健大学校 理学療法学科" }, photo: "assets/img/members/lee-eunsang.jpg" },
       { name: "Hyunjoong Kim, PT, PhD", role: "Ph.D., 2022", interests: "Pain Neuroscience", orcid: "0000-0001-6538-3872", position: { en: "Department of Senior Exercise Prescription, Gwangju Health University", ko: "광주보건대학교 시니어운동처방학과", ja: "光州保健大学校 シニア運動処方学科" }, photo: "assets/img/members/kim-hyunjoong.jpg" },
       { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2025", interests: "Neurological Rehabilitation", position: { en: "Department of Physical Therapy, Kyungnam University", ko: "경남대학교 물리치료학과", ja: "慶南大学校 理学療法学科" }, photo: "assets/img/members/sim-jeongu.jpg" },
-      { name: "Sungeon Park, PT, PhD", role: "Ph.D., 2025", interests: "Musculoskeletal Rehabilitation", email: "spring1056@naver.com", orcid: "0000-0001-5306-5981", position: { en: "Recovery U", ko: "리커버리유", ja: "Recovery U" } }
+      { name: "Sungeon Park, PT, PhD", role: "Ph.D., 2025", interests: "Musculoskeletal Rehabilitation", email: "spring1056@naver.com", orcid: "0000-0001-5306-5981", position: { en: "Recovery U", ko: "리커버리유", ja: "Recovery U" }, photo: "assets/img/members/park-sungeon.jpg" }
     ]
   }
 ];
