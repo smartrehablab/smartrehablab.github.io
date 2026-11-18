@@ -213,7 +213,7 @@ const MEMBERS = [
   { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [
       { name: "Yunji Jo, PT, MS", role: "Ph.D. Student", interests: "Pediatric Physical Therapy", email: "yuuunji@naver.com", orcid: "0009-0004-0348-321X", photo: "assets/img/members/jo-yunji.jpg" },
       { name: "Jonghoon Park, PT, MS", role: "Ph.D. Student", interests: "Musculoskeletal Rehabilitation", email: "pjh0793@naver.com", photo: "assets/img/members/park-jonghoon.jpg" },
-      { name: "Gukhwa Han, PT, MS", role: "Ph.D. Student", email: "koreaflower7@naver.com", photo: "assets/img/members/han-gukhwa.jpg" }
+      { name: "Gukhwa Han, PT, MS", role: "Ph.D. Student", interests: "Fundamentals of Physical Therapy", email: "koreaflower7@naver.com", photo: "assets/img/members/han-gukhwa.jpg" }
     ] },
   { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [
       { name: "Sangbong Lee, PT, PhD Candidate", role: "Ph.D. Candidate", interests: "Neuromuscular Control", email: "leesb109@naver.com", orcid: "0000-0002-2234-2007", photo: "assets/img/members/lee-sangbong.jpg" }
