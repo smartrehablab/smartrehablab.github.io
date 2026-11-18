@@ -202,20 +202,29 @@ const MEMBERS = [
       { name: "Yonghyeon An, PT, BSc", role: "M.S. Student", interests: "Neurological Rehabilitation", email: "ankgg547@gmail.com", orcid: "0009-0006-6038-1636", photo: "assets/img/members/an-yonghyeon.jpg" },
       { name: "Boreum Han, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", email: "bbbreum@syuin.ac.kr", photo: "assets/img/members/han-boreum.jpg" },
       { name: "Jonghun Lee, PT, BSc", role: "M.S. Student", interests: "Musculoskeletal Rehabilitation", email: "leejh178@naver.com", photo: "assets/img/members/lee-jonghun.jpg" },
-      { name: "Jihyuk Yang, PT, BSc", role: "M.S. Student", interests: "Vestibular Rehabilitation", photo: "assets/img/members/yang-jihyuk.jpg" }
+      { name: "Jihyuk Yang, PT, BSc", role: "M.S. Student", interests: "Vestibular Rehabilitation", photo: "assets/img/members/yang-jihyuk.jpg" },
+      { name: "Jaemin Yu, PT, BSc", role: "M.S. Student", interests: "Pediatric Physical Therapy", email: "jemin9957@naver.com", photo: "assets/img/members/yu-jaemin.jpg" },
+      { name: "Hyeonung Kang, PT, BSc", role: "M.S. Student", interests: "Sports Rehabilitation", photo: "assets/img/members/kang-hyeonung.jpg" },
+      { name: "Junyeong Heo, PT, BSc", role: "M.S. Student", interests: "Pediatric Physical Therapy", email: "zksxmqpseka357@naver.com", photo: "assets/img/members/heo-junyeong.jpg" },
+      { name: "Jungil Lee, PT, BSc", role: "M.S. Student", interests: "Neurological Rehabilitation", email: "ljl00402@gmail.com", orcid: "0009-0001-0362-8990", photo: "assets/img/members/lee-jungil.jpg" },
+      { name: "Jaejun Im, PT, BSc", role: "M.S. Student", interests: "Cancer Rehabilitation", email: "jaejun@aumc.ac.kr", photo: "assets/img/members/im-jaejun.jpg" }
     ]
   },
   { group: { en: "Graduate Students (Ph.D.)", ko: "박사과정", ja: "博士課程" }, people: [
       { name: "Yunji Jo, PT, MS", role: "Ph.D. Student", interests: "Pediatric Physical Therapy", email: "yuuunji@naver.com", orcid: "0009-0004-0348-321X", photo: "assets/img/members/jo-yunji.jpg" },
-      { name: "Jonghoon Park, PT, MS", role: "Ph.D. Student", interests: "Musculoskeletal Rehabilitation", email: "pjh0793@naver.com", photo: "assets/img/members/park-jonghoon.jpg" }
+      { name: "Jonghoon Park, PT, MS", role: "Ph.D. Student", interests: "Musculoskeletal Rehabilitation", email: "pjh0793@naver.com", photo: "assets/img/members/park-jonghoon.jpg" },
+      { name: "Gukhwa Han, PT, MS", role: "Ph.D. Student", email: "koreaflower7@naver.com", photo: "assets/img/members/han-gukhwa.jpg" }
     ] },
   { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [
       { name: "Sangbong Lee, PT, PhD Candidate", role: "Ph.D. Candidate", interests: "Neuromuscular Control", email: "leesb109@naver.com", orcid: "0000-0002-2234-2007", photo: "assets/img/members/lee-sangbong.jpg" }
     ] },
   { group: { en: "Alumni (M.S.)", ko: "석사 졸업생", ja: "修士課程修了生" }, people: [
+      { name: "Kukyeon Hwang, PT, MS", role: "M.S., 2025", interests: "Musculoskeletal Rehabilitation", email: "ky4067@naver.com", orcid: "0009-0002-8901-1162", position: { en: "Chaeum Orthopedic Clinic", ko: "채움정형외과", ja: "チェウム整形外科" }, photo: "assets/img/members/hwang-kukyeon.jpg" },
       { name: "Dongmin Park, PT, MS", role: "M.S., 2026", interests: "Geriatric Rehabilitation", email: "rptdm@naver.com", orcid: "0009-0000-7880-0479", position: { en: "Head Therapist, Rehabilitation Center, Zenith Hospital", ko: "제니스병원 재활센터 치료실장", ja: "ゼニス病院 リハビリテーションセンター 治療室長" }, photo: "assets/img/members/park-dongmin.jpg" },
       { name: "Changyong Choi, PT, MS", role: "M.S., 2026", interests: "Musculoskeletal Rehabilitation", email: "libetoi2@naver.com", orcid: "0009-0006-5559-4020", position: { en: "Physical Therapist, Bundang Jaseng Hospital of Korean Medicine", ko: "분당자생한방병원 물리치료사", ja: "盆唐慈生韓方病院 理学療法士" } },
-      { name: "Dohyoung Kim, PT, MS", role: "M.S., 2026", interests: "Neurological Rehabilitation", email: "dd521@naver.com", orcid: "0009-0007-4242-4740", position: { en: "Physical Therapist, Rehabilitation Center, Zenith Hospital", ko: "제니스병원 재활센터 물리치료사", ja: "ゼニス病院 リハビリテーションセンター 理学療法士" } }
+      { name: "Dohyoung Kim, PT, MS", role: "M.S., 2026", interests: "Neurological Rehabilitation", email: "dd521@naver.com", orcid: "0009-0007-4242-4740", position: { en: "Physical Therapist, Rehabilitation Center, Zenith Hospital", ko: "제니스병원 재활센터 물리치료사", ja: "ゼニス病院 リハビリテーションセンター 理学療法士" } },
+      { name: "Suhyeon Jeong, PT, MS", role: "M.S., 2026", interests: "Musculoskeletal Rehabilitation", email: "jsh9276@naver.com", position: { en: "Physical Therapist, Kangbuk Yonsei Hospital", ko: "강북연세병원 물리치료사", ja: "江北延世病院 理学療法士" }, photo: "assets/img/members/jeong-suhyeon.jpg" },
+      { name: "Sungjin Park, PT, MS", role: "M.S., 2026", interests: "Musculoskeletal Rehabilitation", email: "0803pak@naver.com", orcid: "0009-0008-6005-0217", position: { en: "Clinical Researcher, Asan Medical Center", ko: "서울아산병원 임상연구원", ja: "ソウル峨山病院 臨床研究員" }, photo: "assets/img/members/park-sungjin.jpg" }
     ] },
   {
     group: { en: "Alumni (Ph.D.)", ko: "박사 졸업생", ja: "博士課程修了生" },
@@ -223,7 +232,8 @@ const MEMBERS = [
       { name: "Wonjae Choi, PT, PhD", role: "Ph.D., 2015", interests: "Geriatric Rehabilitation", position: { en: "Department of Physical Therapy, Joongbu University", ko: "중부대학교 물리치료학과", ja: "中部大学校 理学療法学科" }, photo: "assets/img/members/choi-wonjae.jpg" },
       { name: "Eunsang Lee, PT, PhD", role: "Ph.D., 2018", interests: "Orthopedic Physical Therapy", position: { en: "Department of Physical Therapy, Gwangju Health University", ko: "광주보건대학교 물리치료학과", ja: "光州保健大学校 理学療法学科" }, photo: "assets/img/members/lee-eunsang.jpg" },
       { name: "Hyunjoong Kim, PT, PhD", role: "Ph.D., 2022", interests: "Pain Neuroscience", orcid: "0000-0001-6538-3872", position: { en: "Department of Senior Exercise Prescription, Gwangju Health University", ko: "광주보건대학교 시니어운동처방학과", ja: "光州保健大学校 シニア運動処方学科" }, photo: "assets/img/members/kim-hyunjoong.jpg" },
-      { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2025", interests: "Neurological Rehabilitation", position: { en: "Department of Physical Therapy, Kyungnam University", ko: "경남대학교 물리치료학과", ja: "慶南大学校 理学療法学科" }, photo: "assets/img/members/sim-jeongu.jpg" }
+      { name: "Jeongu Sim, PT, PhD", role: "Ph.D., 2025", interests: "Neurological Rehabilitation", position: { en: "Department of Physical Therapy, Kyungnam University", ko: "경남대학교 물리치료학과", ja: "慶南大学校 理学療法学科" }, photo: "assets/img/members/sim-jeongu.jpg" },
+      { name: "Sungeon Park, PT, PhD", role: "Ph.D., 2025", interests: "Musculoskeletal Rehabilitation", email: "spring1056@naver.com", orcid: "0000-0001-5306-5981", position: { en: "Recovery U", ko: "리커버리유", ja: "Recovery U" } }
     ]
   }
 ];
