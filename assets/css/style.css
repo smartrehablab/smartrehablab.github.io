@@ -280,10 +280,10 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 860px) {
   body { font-size: 17px; }
-  .gnav nav { position: fixed; inset: 64px 0 0; background: #fff; flex-direction: column; align-items: flex-start; gap: 0; padding: 20px 32px; margin: 0; overflow: auto; opacity: 0; visibility: hidden; transition: opacity .3s var(--ease); }
-  .menu-open .gnav nav { opacity: 1; visibility: visible; }
+  .gnav nav { pointer-events: none; position: fixed; inset: 64px 0 0; background: #fff; flex-direction: column; align-items: flex-start; gap: 0; padding: 20px 32px; margin: 0; overflow: auto; opacity: 0; visibility: hidden; transition: opacity .3s var(--ease); }
+  .menu-open .gnav nav { opacity: 1; visibility: visible; pointer-events: auto; }
   .gnav nav a, .gnav .dd > button { font-size: 28px; font-weight: 700; color: var(--ink); padding: 10px 0; letter-spacing: -.03em; }
-  .dd-panel { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; background: none; padding: 0 0 6px 2px; min-width: 0; }
+  .dd-panel { position: static; opacity: 1; visibility: inherit; transform: none; box-shadow: none; background: none; padding: 0 0 6px 2px; min-width: 0; }
   .dd-panel a { font-size: 19px !important; font-weight: 500 !important; color: var(--ink-2) !important; padding: 6px 0 !important; }
   .gnav nav a.cta-nav { margin-top: 18px; height: 50px; padding: 0 28px; font-size: 19px; color: #fff; }
   .burger { display: block; }
