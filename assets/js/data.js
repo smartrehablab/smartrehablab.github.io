@@ -210,7 +210,7 @@ const MEMBERS = [
       { name: "Jonghoon Park, PT, MS", role: "Ph.D. Student", interests: "Musculoskeletal Rehabilitation", email: "pjh0793@naver.com", photo: "assets/img/members/park-jonghoon.jpg" }
     ] },
   { group: { en: "Ph.D. Candidates (Coursework Completed)", ko: "박사 수료", ja: "博士課程単位取得" }, people: [
-      { name: "Sangbong Lee, PT, PhD Candidate", role: "Ph.D. Candidate", interests: "Neuromuscular Control", email: "leesb109@naver.com", photo: "assets/img/members/lee-sangbong.jpg" }
+      { name: "Sangbong Lee, PT, PhD Candidate", role: "Ph.D. Candidate", interests: "Neuromuscular Control", email: "leesb109@naver.com", orcid: "0000-0002-2234-2007", photo: "assets/img/members/lee-sangbong.jpg" }
     ] },
   { group: { en: "Alumni (M.S.)", ko: "석사 졸업생", ja: "修士課程修了生" }, people: [
       { name: "Dongmin Park, PT, MS", role: "M.S., 2025", interests: "Geriatric Rehabilitation", email: "rptdm@naver.com", orcid: "0009-0000-7880-0479", position: { en: "Head Therapist, Rehabilitation Center, Zenith Hospital", ko: "제니스병원 재활센터 치료실장", ja: "ゼニス病院 リハビリテーションセンター 治療室長" }, photo: "assets/img/members/park-dongmin.jpg" },
