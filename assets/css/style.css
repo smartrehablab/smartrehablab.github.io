@@ -524,3 +524,6 @@ a.collab { display: block; color: inherit; text-decoration: none; transition: tr
 a.collab:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.08); }
 a.collab:hover h3 { color: var(--red); }
 .collab .ext { font-size: .8em; color: var(--red); }
+.person h3 { line-height: 1.3; }
+.person .role { margin-top: 2px; line-height: 1.35; }
+.person .info { margin-top: 6px; line-height: 1.45; }
