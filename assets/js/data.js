@@ -232,7 +232,8 @@ const MEMBERS = [
       { name: "Dohyoung Kim, PT, MS", role: "M.S., 2026", interests: "Neurological Rehabilitation", email: "dd521@naver.com", orcid: "0009-0007-4242-4740", position: { en: "Physical Therapist, Rehabilitation Center, Zenith Hospital", ko: "제니스병원 재활센터 물리치료사", ja: "ゼニス病院 リハビリテーションセンター 理学療法士" } },
       { name: "Suhyeon Jeong, PT, MS", role: "M.S., 2026", interests: "Musculoskeletal Rehabilitation", email: "jsh9276@naver.com", position: { en: "Physical Therapist, Kangbuk Yonsei Hospital", ko: "강북연세병원 물리치료사", ja: "江北延世病院 理学療法士" }, photo: "assets/img/members/jeong-suhyeon.jpg" },
       { name: "Sungjin Park, PT, MS", role: "M.S., 2026", interests: "Musculoskeletal Rehabilitation", email: "0803pak@naver.com", orcid: "0009-0008-6005-0217", position: { en: "Clinical Researcher, Asan Medical Center", ko: "서울아산병원 임상연구원", ja: "ソウル峨山病院 臨床研究員" }, photo: "assets/img/members/park-sungjin.jpg" },
-      { name: "Yeonji Choi, PT, MS", role: "M.S., 2026", interests: "Robot-Assisted Rehabilitation", position: { en: "Researcher, National Rehabilitation Center", ko: "국립재활원 연구원", ja: "国立リハビリテーション院 研究員" }, photo: "assets/img/members/choi-yeonji.jpg" }
+      { name: "Yeonji Choi, PT, MS", role: "M.S., 2026", interests: "Robot-Assisted Rehabilitation", position: { en: "Researcher, National Rehabilitation Center", ko: "국립재활원 연구원", ja: "国立リハビリテーション院 研究員" }, photo: "assets/img/members/choi-yeonji.jpg" },
+      { name: "Jeong Eun Kim, PT, MS", role: "M.S., 2026", interests: "Neurological Rehabilitation", email: "skyvega974@gmail.com", orcid: "0009-0006-4835-0474", photo: "assets/img/members/kim-jeongeun.jpg" }
     ] },
   {
     group: { en: "Alumni (Ph.D.)", ko: "박사 졸업생", ja: "博士課程修了生" },
